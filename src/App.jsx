@@ -32,36 +32,36 @@ const gallery = [
     name: "Eidi Amin",
     designation: "Operations Manager",
   },
-  {
-    image: "/images/gallery-04.jpg",
-    name: "Abdul basit",
-    designation: "Transport Manager",
-  },
-  {
-    image: "/images/gallery-05.jpg",
-    name: "Dhanjay",
-    designation: "HR Manager",
-  },
-  {
-    image: "/images/gallery-06.jpg",
-    name: "Praveen Joseph",
-    designation: "Billing Manager",
-  },
-  {
-    image: "/images/gallery-07.jpeg",
-    name: "Shajahan TK",
-    designation: "IT Manager",
-  },
-   {
-    image: "/images/gallery-08.jpg",
-    name: "Dilbar ",
-    designation: "PRO",
-  },
-  {
-    image: "/images/gallery-09.jpg",
-    name: "Faisal ",
-    designation: "Accounts Manager",
-  },
+  // {
+  //   image: "/images/gallery-04.jpg",
+  //   name: "Abdul basit",
+  //   designation: "Transport Manager",
+  // },
+  // {
+  //   image: "/images/gallery-05.jpg",
+  //   name: "Dhanjay",
+  //   designation: "HR Manager",
+  // },
+  // {
+  //   image: "/images/gallery-06.jpg",
+  //   name: "Praveen Joseph",
+  //   designation: "Billing Manager",
+  // },
+  // {
+  //   image: "/images/gallery-07.jpeg",
+  //   name: "Shajahan TK",
+  //   designation: "IT Manager",
+  // },
+  //  {
+  //   image: "/images/gallery-08.jpg",
+  //   name: "Dilbar ",
+  //   designation: "PRO",
+  // },
+  // {
+  //   image: "/images/gallery-09.jpg",
+  //   name: "Faisal ",
+  //   designation: "Accounts Manager",
+  // },
 ];
 
 const services = [
@@ -394,14 +394,16 @@ function Gallery() {
 
 function Coverage() {
   return <section className="coverage"><div className="coverage-map">
-    <div className="route route-1" /><div className="route route-2" />
-    {['SHARJAH', 'DUBAI', 'AJMAN'].map((c, i) => <motion.div className={`city city-${i + 1}`} key={c} initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: .15 + i * .2, type: 'spring' }} viewport={{ once: true }}><i /><strong>{c}</strong><span>UAE</span></motion.div>)}
-  </div><div className="coverage-copy"><div className="eyebrow">OUR COVERAGE</div><h2>READY ACROSS THE UAE.</h2><p>Strategic coverage across Sharjah, Dubai and Ajman helps us support projects with practical workforce movement and coordination.</p><a className="btn primary" href="#contact">Discuss Your Requirement <ArrowRight size={18} /></a></div></section>
+    <div className="route route-1" />
+    <div className="route route-2" />
+    <div className="route route-3" />
+    {['SHARJAH', 'DUBAI', 'AJMAN', 'ABU DHABI'].map((c, i) => <motion.div className={`city city-${i + 1}`} key={c} initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: .15 + i * .2, type: 'spring' }} viewport={{ once: true }}><i /><strong>{c}</strong><span>UAE</span></motion.div>)}
+  </div><div className="coverage-copy"><div className="eyebrow">OUR COVERAGE</div><h2>READY ACROSS THE UAE.</h2><p>Strategic coverage across Sharjah, Dubai and Ajman Abudhabi helps us support projects with practical workforce movement and coordination.</p><a className="btn primary" href="#contact">Discuss Your Requirement <ArrowRight size={18} /></a></div></section>
 }
 
 function Contact() {
   return <section className="contact" id="contact"><div className="contact-inner"><div className="contact-copy"><div className="eyebrow">LET'S WORK TOGETHER</div><h2>NEED MANPOWER<br /><span>FOR YOUR NEXT PROJECT?</span></h2><p>Send your trade, quantity, project location and expected start date. Our team can review your requirement and coordinate the next steps.</p>
-    <div className="contact-details"><a href="tel:+97165307879"><Phone />+971 6 530 7879</a><a href="mailto:info@mccgroupuae.ae"><Mail />info@mccgroupuae.ae</a><div><MapPin />Sharjah · Dubai · Ajman, UAE</div></div>
+    <div className="contact-details"><a href="tel:+97165307879"><Phone />+971 6 530 7879</a><a href="mailto:info@mccgroupuae.ae"><Mail />info@mccgroupuae.ae</a><div><MapPin />Sharjah · Dubai · Ajman, Abudhabi UAE</div></div>
   </div><form className="contact-form" onSubmit={(e) => e.preventDefault()}><div className="form-row"><input required placeholder="Your name" /><input placeholder="Company name" /></div><div className="form-row"><input type="email" required placeholder="Email address" /><input placeholder="Phone number" /></div><input placeholder="Project location" /><textarea rows="5" placeholder="Tell us the trades, quantity and expected mobilization date..." /><button className="btn primary" type="submit">Send Requirement <ArrowRight size={18} /></button><small>Demo form: connect this to your email/API before publishing.</small></form></div></section>
 }
 
