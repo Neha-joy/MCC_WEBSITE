@@ -4127,12 +4127,10 @@ footer {
   border-radius: 50%;
 
   background:
-    radial-gradient(
-      circle,
+    radial-gradient(circle,
       rgba(0, 174, 232, 0.16),
       rgba(0, 174, 232, 0.05) 42%,
-      transparent 70%
-    );
+      transparent 70%);
 
   filter: blur(28px);
 
@@ -4147,16 +4145,14 @@ footer {
 
   0% {
     transform:
-      translate(-30px, 20px)
-      scale(.95);
+      translate(-30px, 20px) scale(.95);
 
     opacity: .55;
   }
 
   100% {
     transform:
-      translate(35px, -25px)
-      scale(1.12);
+      translate(35px, -25px) scale(1.12);
 
     opacity: .95;
   }
@@ -4168,7 +4164,7 @@ footer {
    CONTENT ABOVE GLOW
 ====================================================== */
 
-.contact > * {
+.contact>* {
   position: relative;
   z-index: 2;
 }
@@ -4203,15 +4199,15 @@ footer {
    CONTACT DETAILS
 ====================================================== */
 
-.contact-details > div,
-.contact-info > div {
+.contact-details>div,
+.contact-info>div {
   transition:
     transform .3s ease,
     color .3s ease;
 }
 
-.contact-details > div:hover,
-.contact-info > div:hover {
+.contact-details>div:hover,
+.contact-info>div:hover {
   transform: translateX(8px);
 }
 
@@ -4225,23 +4221,16 @@ footer {
     filter .3s ease;
 
   animation:
-    contactIconPulse
-    3.6s
-    ease-in-out
-    infinite;
+    contactIconPulse 3.6s ease-in-out infinite;
 }
 
-.contact-details > div:hover svg,
-.contact-info > div:hover svg {
+.contact-details>div:hover svg,
+.contact-info>div:hover svg {
   transform:
-    scale(1.18)
-    rotate(-5deg);
+    scale(1.18) rotate(-5deg);
 
   filter:
-    drop-shadow(
-      0 0 8px
-      rgba(0, 184, 244, .65)
-    );
+    drop-shadow(0 0 8px rgba(0, 184, 244, .65));
 }
 
 @keyframes contactIconPulse {
@@ -4249,18 +4238,12 @@ footer {
   0%,
   100% {
     filter:
-      drop-shadow(
-        0 0 0
-        rgba(0,184,244,0)
-      );
+      drop-shadow(0 0 0 rgba(0, 184, 244, 0));
   }
 
   50% {
     filter:
-      drop-shadow(
-        0 0 8px
-        rgba(0,184,244,.28)
-      );
+      drop-shadow(0 0 8px rgba(0, 184, 244, .28));
   }
 
 }
@@ -4286,10 +4269,7 @@ footer {
 
 .contact-form {
   animation:
-    contactCardFloat
-    5s
-    ease-in-out
-    infinite;
+    contactCardFloat 5s ease-in-out infinite;
 }
 
 @keyframes contactCardFloat {
@@ -4310,17 +4290,14 @@ footer {
 
 .contact-form:hover {
   transform:
-    translateY(-10px)
-    scale(1.01);
+    translateY(-10px) scale(1.01);
 
   border-color:
     rgba(0, 181, 240, .35);
 
   box-shadow:
-    0 28px 70px
-    rgba(0, 0, 0, .28),
-    0 0 34px
-    rgba(0, 174, 232, .08);
+    0 28px 70px rgba(0, 0, 0, .28),
+    0 0 34px rgba(0, 174, 232, .08);
 }
 
 
@@ -4344,21 +4321,16 @@ footer {
   pointer-events: none;
 
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       transparent,
-      rgba(255,255,255,.08),
-      transparent
-    );
+      rgba(255, 255, 255, .08),
+      transparent);
 
   transform:
     rotate(14deg);
 
   animation:
-    contactFormSweep
-    6s
-    ease-in-out
-    infinite;
+    contactFormSweep 6s ease-in-out infinite;
 }
 
 @keyframes contactFormSweep {
@@ -4429,10 +4401,8 @@ footer {
     rgba(10, 38, 61, .95);
 
   box-shadow:
-    0 0 0 3px
-    rgba(19, 189, 243, .10),
-    0 10px 25px
-    rgba(0, 0, 0, .12);
+    0 0 0 3px rgba(19, 189, 243, .10),
+    0 10px 25px rgba(0, 0, 0, .12);
 
   transform:
     translateY(-2px);
@@ -4469,20 +4439,15 @@ footer {
   height: 180%;
 
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       transparent,
-      rgba(255,255,255,.55),
-      transparent
-    );
+      rgba(255, 255, 255, .55),
+      transparent);
 
   transform: rotate(18deg);
 
   animation:
-    buttonShine
-    3.8s
-    ease-in-out
-    infinite;
+    buttonShine 3.8s ease-in-out infinite;
 }
 
 @keyframes buttonShine {
@@ -4509,12 +4474,10 @@ footer {
 
 .contact-form button:hover {
   transform:
-    translateY(-4px)
-    scale(1.025);
+    translateY(-4px) scale(1.025);
 
   box-shadow:
-    0 14px 30px
-    rgba(0, 174, 232, .28);
+    0 14px 30px rgba(0, 174, 232, .28);
 
   filter:
     brightness(1.08);
@@ -4555,20 +4518,16 @@ footer {
 
 [data-theme="light"] .contact::before {
   background:
-    radial-gradient(
-      circle,
+    radial-gradient(circle,
       rgba(0, 157, 220, .16),
       rgba(0, 157, 220, .05) 45%,
-      transparent 72%
-    );
+      transparent 72%);
 }
 
 [data-theme="light"] .contact-form:hover {
   box-shadow:
-    0 24px 60px
-    rgba(0, 74, 115, .16),
-    0 0 30px
-    rgba(0, 160, 220, .08);
+    0 24px 60px rgba(0, 74, 115, .16),
+    0 0 30px rgba(0, 160, 220, .08);
 }
 
 [data-theme="light"] .contact-form input:focus,
@@ -4585,10 +4544,7 @@ footer {
 
   .contact-form {
     animation:
-      contactCardFloat
-      6s
-      ease-in-out
-      infinite;
+      contactCardFloat 6s ease-in-out infinite;
   }
 
   .contact-form:hover {
@@ -4692,7 +4648,7 @@ footer {
    NAVBAR GLOSSY TRANSPARENT OVAL HOVER
 ========================================= */
 
-.nav-links > a:not(.nav-cta) {
+.nav-links>a:not(.nav-cta) {
   position: relative;
   padding: 9px 15px;
   border-radius: 999px;
@@ -4713,16 +4669,13 @@ footer {
    Transparent navy-blue glass
 ========================================= */
 
-[data-theme="light"]
-.nav-links > a:not(.nav-cta):hover {
+[data-theme="light"] .nav-links>a:not(.nav-cta):hover {
   color: #06213a !important;
 
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       rgba(5, 45, 75, .16),
-      rgba(15, 110, 160, .08)
-    );
+      rgba(15, 110, 160, .08));
 
   border-color:
     rgba(6, 53, 88, .18);
@@ -4734,10 +4687,10 @@ footer {
     blur(14px);
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.65),
-    inset 0 -1px 0 rgba(5,70,110,.06),
-    0 8px 20px rgba(0,70,115,.10),
-    0 0 18px rgba(0,153,215,.06);
+    inset 0 1px 0 rgba(255, 255, 255, .65),
+    inset 0 -1px 0 rgba(5, 70, 110, .06),
+    0 8px 20px rgba(0, 70, 115, .10),
+    0 0 18px rgba(0, 153, 215, .06);
 
   transform: translateY(-2px);
 }
@@ -4748,19 +4701,16 @@ footer {
    Transparent white glass
 ========================================= */
 
-[data-theme="dark"]
-.nav-links > a:not(.nav-cta):hover {
+[data-theme="dark"] .nav-links>a:not(.nav-cta):hover {
   color: #ffffff !important;
 
   background:
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,.14),
-      rgba(255,255,255,.045)
-    );
+    linear-gradient(135deg,
+      rgba(255, 255, 255, .14),
+      rgba(255, 255, 255, .045));
 
   border-color:
-    rgba(255,255,255,.16);
+    rgba(255, 255, 255, .16);
 
   backdrop-filter:
     blur(14px);
@@ -4769,10 +4719,10 @@ footer {
     blur(14px);
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.24),
-    inset 0 -1px 0 rgba(255,255,255,.03),
-    0 8px 20px rgba(0,0,0,.20),
-    0 0 20px rgba(255,255,255,.035);
+    inset 0 1px 0 rgba(255, 255, 255, .24),
+    inset 0 -1px 0 rgba(255, 255, 255, .03),
+    0 8px 20px rgba(0, 0, 0, .20),
+    0 0 20px rgba(255, 255, 255, .035);
 
   transform: translateY(-2px);
 }
@@ -4782,7 +4732,7 @@ footer {
    OPTIONAL GLOSS SHINE
 ========================================= */
 
-.nav-links > a:not(.nav-cta)::before {
+.nav-links>a:not(.nav-cta)::before {
   content: "";
 
   position: absolute;
@@ -4793,13 +4743,11 @@ footer {
   pointer-events: none;
 
   background:
-    linear-gradient(
-      120deg,
-      rgba(255,255,255,.30),
+    linear-gradient(120deg,
+      rgba(255, 255, 255, .30),
       transparent 35%,
       transparent 65%,
-      rgba(255,255,255,.08)
-    );
+      rgba(255, 255, 255, .08));
 
   opacity: 0;
 
@@ -4807,7 +4755,7 @@ footer {
 }
 
 
-.nav-links > a:not(.nav-cta):hover::before {
+.nav-links>a:not(.nav-cta):hover::before {
   opacity: 1;
 }
 
@@ -4855,21 +4803,19 @@ button,
   color: #06213a !important;
 
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       rgba(5, 45, 75, .16),
       rgba(0, 153, 215, .10),
-      rgba(255, 255, 255, .18)
-    ) !important;
+      rgba(255, 255, 255, .18)) !important;
 
   border:
     1px solid rgba(6, 73, 110, .18) !important;
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.75),
-    inset 0 -1px 0 rgba(4,60,95,.06),
-    0 8px 22px rgba(0,70,115,.10),
-    0 0 20px rgba(0,160,220,.06);
+    inset 0 1px 0 rgba(255, 255, 255, .75),
+    inset 0 -1px 0 rgba(4, 60, 95, .06),
+    0 8px 22px rgba(0, 70, 115, .10),
+    0 0 20px rgba(0, 160, 220, .06);
 }
 
 
@@ -4883,21 +4829,19 @@ button,
   color: #ffffff !important;
 
   background:
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,.15),
-      rgba(255,255,255,.07),
-      rgba(0,174,232,.08)
-    ) !important;
+    linear-gradient(135deg,
+      rgba(255, 255, 255, .15),
+      rgba(255, 255, 255, .07),
+      rgba(0, 174, 232, .08)) !important;
 
   border:
-    1px solid rgba(255,255,255,.16) !important;
+    1px solid rgba(255, 255, 255, .16) !important;
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.24),
-    inset 0 -1px 0 rgba(255,255,255,.03),
-    0 9px 24px rgba(0,0,0,.24),
-    0 0 22px rgba(255,255,255,.035);
+    inset 0 1px 0 rgba(255, 255, 255, .24),
+    inset 0 -1px 0 rgba(255, 255, 255, .03),
+    0 9px 24px rgba(0, 0, 0, .24),
+    0 0 22px rgba(255, 255, 255, .035);
 }
 
 
@@ -4919,14 +4863,12 @@ button,
   pointer-events: none;
 
   background:
-    linear-gradient(
-      120deg,
-      rgba(255,255,255,.38) 0%,
-      rgba(255,255,255,.08) 28%,
+    linear-gradient(120deg,
+      rgba(255, 255, 255, .38) 0%,
+      rgba(255, 255, 255, .08) 28%,
       transparent 48%,
       transparent 70%,
-      rgba(255,255,255,.10) 100%
-    );
+      rgba(255, 255, 255, .10) 100%);
 
   opacity: .55;
 
@@ -4954,12 +4896,10 @@ button,
   pointer-events: none;
 
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       transparent,
-      rgba(255,255,255,.55),
-      transparent
-    );
+      rgba(255, 255, 255, .55),
+      transparent);
 
   transform: rotate(20deg);
 
@@ -4975,8 +4915,7 @@ button,
 .nav-cta:hover,
 .contact-form button:hover {
   transform:
-    translateY(-3px)
-    scale(1.025);
+    translateY(-3px) scale(1.025);
 
   filter: brightness(1.08);
 }
@@ -4986,20 +4925,18 @@ button,
 [data-theme="light"] .nav-cta:hover,
 [data-theme="light"] .contact-form button:hover {
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       rgba(7, 62, 100, .22),
       rgba(0, 169, 230, .14),
-      rgba(255,255,255,.24)
-    ) !important;
+      rgba(255, 255, 255, .24)) !important;
 
   border-color:
     rgba(0, 135, 190, .30) !important;
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.9),
-    0 12px 28px rgba(0,80,125,.15),
-    0 0 24px rgba(0,170,230,.10);
+    inset 0 1px 0 rgba(255, 255, 255, .9),
+    0 12px 28px rgba(0, 80, 125, .15),
+    0 0 24px rgba(0, 170, 230, .10);
 }
 
 
@@ -5007,20 +4944,18 @@ button,
 [data-theme="dark"] .nav-cta:hover,
 [data-theme="dark"] .contact-form button:hover {
   background:
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,.22),
-      rgba(255,255,255,.10),
-      rgba(0,174,232,.12)
-    ) !important;
+    linear-gradient(135deg,
+      rgba(255, 255, 255, .22),
+      rgba(255, 255, 255, .10),
+      rgba(0, 174, 232, .12)) !important;
 
   border-color:
-    rgba(255,255,255,.27) !important;
+    rgba(255, 255, 255, .27) !important;
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.32),
-    0 12px 30px rgba(0,0,0,.30),
-    0 0 24px rgba(0,174,232,.08);
+    inset 0 1px 0 rgba(255, 255, 255, .32),
+    0 12px 30px rgba(0, 0, 0, .30),
+    0 0 24px rgba(0, 174, 232, .08);
 }
 
 
@@ -5032,9 +4967,7 @@ button,
   opacity: 1;
 
   animation:
-    glossyButtonSweep
-    .75s
-    ease forwards;
+    glossyButtonSweep .75s ease forwards;
 }
 
 
@@ -5055,9 +4988,9 @@ button,
    KEEP BUTTON TEXT / ICON ABOVE GLOSS
 ========================================= */
 
-.btn > *,
-.nav-cta > *,
-.contact-form button > * {
+.btn>*,
+.nav-cta>*,
+.contact-form button>* {
   position: relative;
   z-index: 3;
 }
@@ -5069,7 +5002,7 @@ button,
 
 .btn.ghost {
   background:
-    rgba(255,255,255,.045) !important;
+    rgba(255, 255, 255, .045) !important;
 
   backdrop-filter:
     blur(16px);
@@ -5087,6 +5020,398 @@ button,
 .nav-cta:active,
 .contact-form button:active {
   transform:
-    translateY(0)
-    scale(.97);
+    translateY(0) scale(.97);
+}
+
+
+
+/* ======================================================
+   MAJOR CLIENTS
+====================================================== */
+
+.major-clients {
+  position: relative;
+
+  padding: 110px 0;
+
+  overflow: hidden;
+
+  background:
+    rgba(3, 12, 23, 0.68);
+
+  backdrop-filter: blur(2px);
+
+  -webkit-backdrop-filter: blur(2px);
+}
+
+
+/* ======================================================
+   INNER
+====================================================== */
+
+.major-clients-inner {
+  width: min(var(--max),
+      calc(100% - 48px));
+
+  margin: auto;
+}
+
+
+/* ======================================================
+   HEADING
+====================================================== */
+
+.clients-heading {
+  max-width: 720px;
+
+  margin-bottom: 55px;
+}
+
+
+.clients-heading>span {
+  color: var(--accent);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: .24em;
+}
+
+
+.clients-heading h2 {
+  margin: 14px 0;
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size:
+    clamp(46px,
+      6vw,
+      76px);
+
+  line-height: .92;
+
+  color: var(--text);
+
+  text-transform: uppercase;
+}
+
+
+.clients-heading p {
+  max-width: 620px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+
+/* ======================================================
+   MARQUEE AREA
+====================================================== */
+
+.clients-marquee {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  padding: 10px 0;
+}
+
+
+/* Fade at left/right */
+
+.clients-marquee::before,
+.clients-marquee::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 120px;
+
+  z-index: 5;
+
+  pointer-events: none;
+}
+
+
+.clients-marquee::before {
+  left: 0;
+
+  background:
+    linear-gradient(90deg,
+      rgba(3, 12, 23, 1),
+      transparent);
+}
+
+
+.clients-marquee::after {
+  right: 0;
+
+  background:
+    linear-gradient(270deg,
+      rgba(3, 12, 23, 1),
+      transparent);
+}
+
+
+/* ======================================================
+   MOVING TRACK
+====================================================== */
+
+.clients-track {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  width: max-content;
+
+  animation:
+    clientMarquee 28s linear infinite;
+}
+
+
+/* Pause when hovering */
+
+.clients-marquee:hover .clients-track {
+  animation-play-state: paused;
+}
+
+
+@keyframes clientMarquee {
+
+  from {
+    transform:
+      translateX(0);
+  }
+
+  to {
+    transform:
+      translateX(-50%);
+  }
+
+}
+
+
+/* ======================================================
+   CLIENT CARD
+====================================================== */
+
+.client-logo-card {
+  position: relative;
+
+  width: 220px;
+  height: 125px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 22px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  border:
+    1px solid rgba(77, 188, 235, .14);
+
+  background:
+    linear-gradient(135deg,
+      rgba(255, 255, 255, .07),
+      rgba(0, 174, 232, .035));
+
+  backdrop-filter:
+    blur(14px);
+
+  -webkit-backdrop-filter:
+    blur(14px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .07),
+    0 12px 35px rgba(0, 0, 0, .12);
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease,
+    background .35s ease;
+}
+
+
+/* ======================================================
+   LOGO
+====================================================== */
+
+.client-logo-card img {
+  max-width: 150px;
+  max-height: 72px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  filter:
+    brightness(100%);
+
+  transition:
+    filter .35s ease,
+    transform .35s ease;
+}
+
+.client-logo-card {
+  width: 280px;
+  height: 160px;
+}
+
+.client-logo-card img {
+  max-width: 220px;
+  max-height: 105px;
+}
+
+
+/* ======================================================
+   HOVER
+====================================================== */
+
+.client-logo-card:hover {
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(15, 184, 241, .45);
+
+  background:
+    linear-gradient(135deg,
+      rgba(255, 255, 255, .12),
+      rgba(0, 174, 232, .07));
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .14),
+    0 18px 45px rgba(0, 0, 0, .18),
+    0 0 24px rgba(0, 174, 232, .08);
+}
+
+
+.client-logo-card:hover img {
+  filter:
+    grayscale(0) brightness(1) opacity(1);
+
+  transform:
+    scale(1.06);
+}
+
+
+/* ======================================================
+   LIGHT MODE
+====================================================== */
+
+[data-theme="light"] .major-clients {
+  background:
+    rgba(255, 255, 255, .72);
+}
+
+
+[data-theme="light"] .clients-marquee::before {
+  background:
+    linear-gradient(90deg,
+      rgba(247, 251, 255, 1),
+      transparent);
+}
+
+
+[data-theme="light"] .clients-marquee::after {
+  background:
+    linear-gradient(270deg,
+      rgba(247, 251, 255, 1),
+      transparent);
+}
+
+
+[data-theme="light"] .client-logo-card {
+  background:
+    linear-gradient(135deg,
+      rgba(255, 255, 255, .72),
+      rgba(5, 126, 185, .05));
+
+  border-color:
+    rgba(0, 126, 180, .14);
+
+  box-shadow:
+    0 12px 30px rgba(0, 70, 110, .07);
+}
+
+
+[data-theme="light"] .client-logo-card img {
+  filter:
+     brightness(100%) ;
+}
+
+
+[data-theme="light"] .client-logo-card:hover img {
+  filter:
+    grayscale(0) brightness(1) opacity(1);
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 700px) {
+
+  .major-clients {
+    padding:
+      85px 0;
+  }
+
+
+  .major-clients-inner {
+    width:
+      calc(100% - 36px);
+  }
+
+
+  .client-logo-card {
+    width: 170px;
+    height: 105px;
+
+    padding: 18px;
+  }
+
+
+  .client-logo-card img {
+    max-width: 125px;
+    max-height: 60px;
+  }
+
+
+  .clients-track {
+    gap: 14px;
+
+    animation-duration:
+      22s;
+  }
+
+
+  .clients-marquee::before,
+  .clients-marquee::after {
+    width: 50px;
+  }
+
 }

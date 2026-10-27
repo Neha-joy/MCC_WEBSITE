@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import useTheme from './hooks/useTheme';
 import ScrollConstructionBackground from './components/ScrollConstructionBackground';
+import MajorClients from './components/MajorClients';
 
 export default function App() {
    const { theme, toggleTheme } = useTheme();
@@ -27,6 +28,7 @@ export default function App() {
         <Services />
         <ManpowerDashboard />
         <Projects />
+        <MajorClients/>
       
         <WhyUs />
         <Team />
