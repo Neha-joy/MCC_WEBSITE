@@ -40,7 +40,7 @@ export const staffGallery = [
 ];
 
 export const manpowerStats = [
-  { value: 9000, suffix: '+', label: 'Group Workforce', note: 'Skilled, semi-skilled and support manpower', icon: Users },
+  { value: 10000, suffix: '+', label: 'Group Workforce', note: 'Skilled, semi-skilled and support manpower', icon: Users },
   { value: 200, suffix: '+', label: 'Clients Served', note: 'Construction and project partners', icon: Building2 },
   { value: 300, suffix: '+', label: 'Projects Supported', note: 'Across multiple UAE sectors', icon: HardHat },
   { value: 8, suffix: '+', label: 'Core Trades', note: 'Civil, MEP and support categories', icon: Wrench },

@@ -34,7 +34,7 @@ export default function Hero() {
           <a className="btn ghost" href="#projects">Explore Projects</a>
         </motion.div>
         <div className="hero-stats">
-          <div><strong><Counter end={9000} /></strong><span>Group Workforce</span></div>
+          <div><strong><Counter end={10000} /></strong><span>Group Workforce</span></div>
           <div><strong><Counter end={200} /></strong><span>Clients Served</span></div>
           <div><strong><Counter end={300} /></strong><span>Projects</span></div>
         </div>
