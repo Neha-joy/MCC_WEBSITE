@@ -5,7 +5,7 @@ import React from "react";
 const clients = [
   {
     name: "Client 01",
-    logo: "/images/clients/client-01.webp",
+    logo: "/images/clients/client-07.png",
   },
   {
     name: "Client 02",

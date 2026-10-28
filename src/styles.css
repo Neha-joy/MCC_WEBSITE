@@ -6971,3 +6971,24 @@ button,
   /* border-color:
     rgba(6,33,58,.07); */
 }
+
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-card {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+  grid-column: auto !important;
+  grid-row: auto !important;
+}

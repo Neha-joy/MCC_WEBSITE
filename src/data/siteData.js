@@ -25,9 +25,33 @@ export const images = {
 
 
 export const projects = [
-  { name: 'High-Rise Construction', place: 'Dubai', image: '/images/project-01.png', tag: 'MANPOWER SUPPLY' },
-  { name: 'Residential Development', place: 'Sharjah', image: '/images/project-02.png', tag: 'CIVIL WORKFORCE' },
-  { name: 'Commercial Fit-Out', place: 'Ajman', image: '/images/project-03.png', tag: 'SKILLED TRADES' },
+  {
+    name: 'High-Rise Construction',
+    place: 'Dubai',
+    image: '/images/project-01.png',
+    tag: 'MANPOWER SUPPLY'
+  },
+
+  {
+    name: 'Residential Development',
+    place: 'Sharjah',
+    image: '/images/project-02.png',
+    tag: 'CIVIL WORKFORCE'
+  },
+
+  {
+    name: 'Commercial Fit-Out',
+    place: 'Ajman',
+    image: '/images/project-03.png',
+    tag: 'SKILLED TRADES'
+  },
+
+  {
+    name: 'Infrastructure Development',
+    place: 'Abu Dhabi',
+    image: '/images/project-04.png',
+    tag: 'PROJECT WORKFORCE'
+  }
 ];
 
 export const staffGallery = [
