@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import useTheme from './hooks/useTheme';
 import ScrollConstructionBackground from './components/ScrollConstructionBackground';
 import MajorClients from './components/MajorClients';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
    const { theme, toggleTheme } = useTheme();
@@ -29,15 +30,14 @@ export default function App() {
         <ManpowerDashboard />
         <Projects />
         <MajorClients/>
-      
         <WhyUs />
         <Team />
         {/* <Gallery /> */}
         <Coverage />
         <Contact />
       </main>
-
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
