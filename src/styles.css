@@ -5359,7 +5359,7 @@ button,
 
 [data-theme="light"] .client-logo-card img {
   filter:
-     brightness(100%) ;
+    brightness(100%);
 }
 
 
@@ -5443,23 +5443,21 @@ button,
   text-decoration: none;
 
   background:
-    linear-gradient(
-      145deg,
+    linear-gradient(145deg,
       rgba(37, 211, 102, .96),
-      rgba(16, 176, 76, .92)
-    );
+      rgba(16, 176, 76, .92));
 
   border:
-    1px solid rgba(255,255,255,.32);
+    1px solid rgba(255, 255, 255, .32);
 
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 
   box-shadow:
-    inset 0 2px 0 rgba(255,255,255,.34),
-    inset 0 -3px 8px rgba(0,90,40,.18),
-    0 12px 30px rgba(0,0,0,.24),
-    0 0 22px rgba(37,211,102,.30);
+    inset 0 2px 0 rgba(255, 255, 255, .34),
+    inset 0 -3px 8px rgba(0, 90, 40, .18),
+    0 12px 30px rgba(0, 0, 0, .24),
+    0 0 22px rgba(37, 211, 102, .30);
 
   transition:
     transform .3s ease,
@@ -5484,11 +5482,9 @@ button,
   border-radius: 50%;
 
   background:
-    linear-gradient(
-      180deg,
-      rgba(255,255,255,.55),
-      rgba(255,255,255,.08)
-    );
+    linear-gradient(180deg,
+      rgba(255, 255, 255, .55),
+      rgba(255, 255, 255, .08));
 
   filter: blur(1px);
 
@@ -5514,7 +5510,7 @@ button,
   border-radius: 50%;
 
   background:
-    rgba(255,255,255,.06);
+    rgba(255, 255, 255, .06);
 }
 
 
@@ -5525,10 +5521,7 @@ button,
   color: #ffffff;
 
   filter:
-    drop-shadow(
-      0 3px 5px
-      rgba(0,0,0,.18)
-    );
+    drop-shadow(0 3px 5px rgba(0, 0, 0, .18));
 }
 
 
@@ -5542,14 +5535,10 @@ button,
   border-radius: 50%;
 
   border:
-    2px solid
-    rgba(37,211,102,.45);
+    2px solid rgba(37, 211, 102, .45);
 
   animation:
-    whatsappRingPulse
-    2s
-    ease-out
-    infinite;
+    whatsappRingPulse 2s ease-out infinite;
 
   pointer-events: none;
 }
@@ -5579,18 +5568,16 @@ button,
 
 .whatsapp-floating:hover {
   transform:
-    translateY(-5px)
-    scale(1.06);
+    translateY(-5px) scale(1.06);
 
   filter:
-    brightness(1.06)
-    saturate(1.08);
+    brightness(1.06) saturate(1.08);
 
   box-shadow:
-    inset 0 2px 0 rgba(255,255,255,.42),
-    inset 0 -3px 8px rgba(0,90,40,.20),
-    0 18px 38px rgba(0,0,0,.28),
-    0 0 34px rgba(37,211,102,.42);
+    inset 0 2px 0 rgba(255, 255, 255, .42),
+    inset 0 -3px 8px rgba(0, 90, 40, .20),
+    0 18px 38px rgba(0, 0, 0, .28),
+    0 0 34px rgba(37, 211, 102, .42);
 }
 
 
@@ -5598,8 +5585,7 @@ button,
 
 .whatsapp-floating:active {
   transform:
-    translateY(-1px)
-    scale(.96);
+    translateY(-1px) scale(.96);
 }
 
 
@@ -5715,10 +5701,7 @@ button,
   display: grid;
 
   grid-template-columns:
-    80px
-    1fr
-    1.3fr
-    50px;
+    80px 1fr 1.3fr 50px;
 
   align-items: center;
 
@@ -5748,12 +5731,10 @@ button,
   inset: 0;
 
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       rgba(0, 174, 232, .12),
-      rgba(255,255,255,.035),
-      transparent
-    );
+      rgba(255, 255, 255, .035),
+      transparent);
 
   transform: translateX(-100%);
 
@@ -5779,7 +5760,7 @@ button,
 
 /* KEEP CONTENT ABOVE BG */
 
-.trade-modern-row > * {
+.trade-modern-row>* {
   position: relative;
   z-index: 2;
 }
@@ -5850,10 +5831,10 @@ button,
   color: var(--accent);
 
   border:
-    1px solid rgba(0,174,232,.28);
+    1px solid rgba(0, 174, 232, .28);
 
   background:
-    rgba(0,174,232,.05);
+    rgba(0, 174, 232, .05);
 
   transition:
     transform .35s ease,
@@ -5862,11 +5843,9 @@ button,
 }
 
 
-.trade-modern-row:hover
-.trade-modern-arrow {
+.trade-modern-row:hover .trade-modern-arrow {
   transform:
-    rotate(45deg)
-    scale(1.08);
+    rotate(45deg) scale(1.08);
 
   background: var(--accent);
 
@@ -5878,29 +5857,24 @@ button,
    LIGHT MODE
 ========================================= */
 
-[data-theme="light"]
-.trade-modern-row {
+[data-theme="light"] .trade-modern-row {
   border-color:
-    rgba(5,80,120,.12);
+    rgba(5, 80, 120, .12);
 }
 
 
-[data-theme="light"]
-.trades-modern-list {
+[data-theme="light"] .trades-modern-list {
   border-color:
-    rgba(5,80,120,.16);
+    rgba(5, 80, 120, .16);
 }
 
 
-[data-theme="light"]
-.trade-modern-row::before {
+[data-theme="light"] .trade-modern-row::before {
   background:
-    linear-gradient(
-      90deg,
-      rgba(0,140,205,.10),
-      rgba(255,255,255,.65),
-      transparent
-    );
+    linear-gradient(90deg,
+      rgba(0, 140, 205, .10),
+      rgba(255, 255, 255, .65),
+      transparent);
 }
 
 
@@ -5926,15 +5900,12 @@ button,
 
   .trade-modern-row {
     grid-template-columns:
-      52px
-      1fr
-      38px;
+      52px 1fr 38px;
 
     gap: 12px;
 
     padding:
-      22px
-      8px;
+      22px 8px;
   }
 
 
@@ -5977,14 +5948,12 @@ button,
   color: var(--text);
 
   background:
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,.10),
-      rgba(0,174,232,.05)
-    );
+    linear-gradient(135deg,
+      rgba(255, 255, 255, .10),
+      rgba(0, 174, 232, .05));
 
   border:
-    1px solid rgba(0,174,232,.18);
+    1px solid rgba(0, 174, 232, .18);
 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -6007,14 +5976,12 @@ button,
   color: #ffffff;
 
   background:
-    linear-gradient(
-      135deg,
-      rgba(0,174,232,.85),
-      rgba(0,110,180,.75)
-    );
+    linear-gradient(135deg,
+      rgba(0, 174, 232, .85),
+      rgba(0, 110, 180, .75));
 
   box-shadow:
-    0 10px 25px rgba(0,174,232,.20);
+    0 10px 25px rgba(0, 174, 232, .20);
 }
 
 
@@ -6022,12 +5989,10 @@ button,
 
 .footer-socials a:nth-child(2):hover {
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       #833ab4,
       #fd1d1d,
-      #fcb045
-    );
+      #fcb045);
 }
 
 
@@ -6044,4 +6009,965 @@ button,
 
 .developer-credit:hover {
   opacity: 0.55;
+}
+
+.footer-socials a:nth-child(4):hover {
+  background:
+    linear-gradient(
+      135deg,
+      #111111,
+      #333333
+    );
+
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+/* =====================================================
+   FLOATING PUZZLE BUTTON - LEFT SIDE
+===================================================== */
+
+.floating-puzzle-btn {
+  position: fixed;
+
+  left: 24px;
+  right: auto;
+
+  bottom: 90px;
+
+  z-index: 99998;
+
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  border:
+    1px solid rgba(0,174,232,.35);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(6,40,70,.96),
+      rgba(0,157,215,.88)
+    );
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.28),
+    0 8px 20px rgba(0,0,0,.25),
+    0 0 18px rgba(0,174,232,.20);
+
+  cursor: pointer;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    filter .3s ease;
+}
+
+
+.floating-puzzle-btn svg {
+  position: relative;
+
+  z-index: 3;
+
+  width: 21px;
+  height: 21px;
+}
+
+
+.floating-puzzle-btn:hover {
+  transform:
+    translateY(-3px)
+    scale(1.07);
+
+  filter:
+    brightness(1.1);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.38),
+    0 12px 26px rgba(0,0,0,.30),
+    0 0 27px rgba(0,174,232,.30);
+}
+
+
+/* =====================================================
+   PUZZLE BUTTON PULSE
+===================================================== */
+
+.puzzle-pulse {
+  position: absolute;
+
+  inset: -4px;
+
+  border-radius: 50%;
+
+  border:
+    1.5px solid rgba(0,174,232,.38);
+
+  pointer-events: none;
+
+  animation:
+    puzzlePulse
+    2.2s
+    ease-out
+    infinite;
+}
+
+
+@keyframes puzzlePulse {
+
+  0% {
+    transform: scale(.9);
+    opacity: .8;
+  }
+
+  75% {
+    transform: scale(1.28);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.28);
+    opacity: 0;
+  }
+
+}
+
+
+/* =====================================================
+   HAND POINTER - LEFT SIDE
+===================================================== */
+
+.game-hand-pointer {
+  position: fixed;
+
+  left: 78px;
+  right: auto;
+
+  bottom: 92px;
+
+  z-index: 99997;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  pointer-events: none;
+
+  animation:
+    gameHandEnterExitLeft
+    3s
+    cubic-bezier(.4,0,.2,1)
+    forwards;
+}
+
+
+/* PLAY GAME LABEL */
+
+.game-hand-label {
+  order: 2;
+
+  padding:
+    7px 11px;
+
+  border-radius: 999px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .09em;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(5,38,65,.84),
+      rgba(0,126,184,.30)
+    );
+
+  border:
+    1px solid rgba(0,174,232,.22);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    0 7px 20px rgba(0,0,0,.20);
+}
+
+
+/* HAND */
+
+.game-hand-icon {
+  order: 1;
+
+  display: block;
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  filter:
+    drop-shadow(
+      0 4px 7px rgba(0,0,0,.25)
+    );
+
+  animation:
+    gameHandPointLeft
+    .55s
+    ease-in-out
+    infinite alternate;
+}
+
+
+/* =====================================================
+   HAND ENTERS FROM LEFT AND GOES BACK LEFT
+===================================================== */
+
+@keyframes gameHandEnterExitLeft {
+
+  0% {
+    opacity: 0;
+
+    transform:
+      translateX(150px);
+  }
+
+  15% {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+
+  78% {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+
+    transform:
+      translateX(-120px);
+  }
+
+}
+
+
+/* HAND POINTS TOWARD GAME BUTTON */
+
+@keyframes gameHandPointLeft {
+
+  from {
+    transform:
+      scaleX(-1)
+      translateX(-2px)
+      rotate(-3deg);
+  }
+
+  to {
+    transform:
+      scaleX(-1)
+      translateX(5px)
+      rotate(3deg);
+  }
+
+}
+
+
+/* =====================================================
+   PUZZLE POPUP - LEFT SIDE
+===================================================== */
+
+.picture-puzzle-box {
+  position: fixed;
+
+  left: 24px;
+  right: auto;
+
+  bottom: 150px;
+
+  z-index: 99999;
+
+  width: 340px;
+
+  padding: 18px;
+
+  border-radius: 20px;
+
+  color: var(--text);
+
+  background:
+    rgba(4,18,32,.96);
+
+  border:
+    1px solid rgba(0,174,232,.22);
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  box-shadow:
+    0 24px 60px rgba(0,0,0,.40);
+
+  animation:
+    puzzlePopup
+    .28s
+    ease;
+}
+
+
+@keyframes puzzlePopup {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(12px)
+      scale(.96);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+
+}
+
+
+/* =====================================================
+   GAME HEADER
+===================================================== */
+
+.picture-puzzle-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+
+.picture-puzzle-header > div {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.picture-puzzle-header span {
+  color: var(--accent);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.picture-puzzle-header strong {
+  margin-top: 3px;
+
+  color: var(--text);
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size: 20px;
+
+  line-height: 1;
+}
+
+
+/* CLOSE BUTTON */
+
+.picture-puzzle-close {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(255,255,255,.10);
+
+  background:
+    rgba(255,255,255,.04);
+
+  color: var(--text);
+
+  cursor: pointer;
+
+  transition:
+    transform .25s ease,
+    background .25s ease;
+}
+
+
+.picture-puzzle-close:hover {
+  transform: rotate(90deg);
+
+  background:
+    rgba(255,255,255,.10);
+}
+
+
+/* =====================================================
+   PUZZLE BOARD
+===================================================== */
+
+.picture-puzzle-board {
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  grid-template-rows:
+    repeat(3, 1fr);
+
+  gap: 4px;
+
+  padding: 4px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  border:
+    1px solid rgba(0,174,232,.18);
+
+  background:
+    rgba(0,174,232,.04);
+}
+
+
+/* =====================================================
+   SQUARE PUZZLE TILES
+===================================================== */
+
+.puzzle-tile {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  aspect-ratio: 1 / 1;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  border-radius:
+    4px !important;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+
+  background-color:
+    rgba(7,35,57,.80);
+
+  box-shadow:
+    inset 0 0 0 1px
+    rgba(255,255,255,.05);
+
+  transition:
+    transform .18s ease,
+    filter .18s ease,
+    box-shadow .18s ease;
+}
+
+
+.puzzle-tile:hover:not(.empty) {
+  transform:
+    scale(.97);
+
+  filter:
+    brightness(1.10);
+
+  box-shadow:
+    inset 0 0 0 2px
+    rgba(0,174,232,.35);
+}
+
+
+/* EMPTY TILE */
+
+.puzzle-tile.empty {
+  cursor: default;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,174,232,.03),
+      rgba(255,255,255,.015)
+    ) !important;
+
+  border:
+    1px dashed
+    rgba(0,174,232,.12);
+
+  box-shadow: none;
+}
+
+
+/* =====================================================
+   START BUTTON
+===================================================== */
+
+.puzzle-start-btn {
+  width: 100%;
+
+  min-height: 44px;
+
+  margin-top: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(0,174,232,.28);
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,174,232,.86),
+      rgba(0,105,165,.86)
+    );
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.25),
+    0 8px 22px rgba(0,130,190,.18);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+
+.puzzle-start-btn:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.35),
+    0 12px 27px rgba(0,130,190,.25);
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.puzzle-message {
+  margin:
+    12px 0 4px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   SUCCESS MESSAGE
+===================================================== */
+
+.puzzle-success {
+  margin-top: 12px;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  color: #5fe09b;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  background:
+    rgba(40,200,120,.08);
+
+  border:
+    1px solid rgba(40,200,120,.18);
+
+  animation:
+    puzzleSuccess
+    .4s
+    ease;
+}
+
+
+@keyframes puzzleSuccess {
+
+  from {
+    opacity: 0;
+
+    transform:
+      scale(.94);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      scale(1);
+  }
+
+}
+
+
+/* =====================================================
+   SHUFFLE BUTTON
+===================================================== */
+
+.puzzle-reset {
+  margin:
+    12px auto 0;
+
+  padding:
+    5px 8px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  transition:
+    color .25s ease,
+    transform .25s ease;
+}
+
+
+.puzzle-reset:hover {
+  color: var(--accent);
+
+  transform:
+    translateY(-1px);
+}
+
+
+/* =====================================================
+   LIGHT MODE
+===================================================== */
+
+[data-theme="light"]
+.picture-puzzle-box {
+  background:
+    rgba(255,255,255,.96);
+
+  border-color:
+    rgba(0,120,175,.16);
+
+  box-shadow:
+    0 20px 50px rgba(0,60,100,.18);
+}
+
+
+[data-theme="light"]
+.picture-puzzle-board {
+  background:
+    rgba(0,120,175,.04);
+
+  border-color:
+    rgba(0,120,175,.14);
+}
+
+
+[data-theme="light"]
+.puzzle-tile {
+  background-color:
+    rgba(220,240,250,.85);
+}
+
+
+[data-theme="light"]
+.puzzle-tile.empty {
+  background:
+    rgba(0,120,175,.035)
+    !important;
+
+  border-color:
+    rgba(0,120,175,.10);
+}
+
+
+[data-theme="light"]
+.floating-puzzle-btn {
+  color: #06213a;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.96),
+      rgba(0,174,232,.22)
+    );
+
+  border-color:
+    rgba(0,120,175,.22);
+}
+
+
+[data-theme="light"]
+.game-hand-label {
+  color: #06213a;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.92),
+      rgba(0,174,232,.10)
+    );
+
+  border-color:
+    rgba(0,120,175,.15);
+
+  box-shadow:
+    0 7px 18px
+    rgba(0,60,100,.10);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .floating-puzzle-btn {
+    left: 18px;
+    right: auto;
+
+    bottom: 78px;
+
+    width: 42px;
+    height: 42px;
+  }
+
+
+  .floating-puzzle-btn svg {
+    width: 19px;
+    height: 19px;
+  }
+
+
+  .game-hand-pointer {
+    left: 66px;
+    right: auto;
+
+    bottom: 81px;
+  }
+
+
+  .game-hand-icon {
+    font-size: 24px;
+  }
+
+
+  .game-hand-label {
+    padding:
+      6px 9px;
+
+    font-size: 8px;
+  }
+
+
+  .picture-puzzle-box {
+    left: 12px;
+    right: auto;
+
+    bottom: 135px;
+
+    width:
+      calc(100% - 24px);
+
+    max-width: 340px;
+
+    padding: 15px;
+  }
+
+
+  .picture-puzzle-header strong {
+    font-size: 18px;
+  }
+
+
+  .picture-puzzle-board {
+    gap: 3px;
+
+    padding: 3px;
+  }
+
+
+  .puzzle-tile {
+    border-radius:
+      3px !important;
+  }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+  .picture-puzzle-box {
+    left: 10px;
+    right: auto;
+
+    width:
+      calc(100% - 20px);
+  }
+
+
+  .game-hand-label {
+    display: none;
+  }
+
+}
+
+.back-top-wrap {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* SMALL MESSAGE ON RIGHT SIDE */
+
+.back-top-message {
+  padding: 6px 9px;
+
+  border-radius: 999px;
+
+  color: rgba(255,255,255,.58);
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: .05em;
+
+  white-space: nowrap;
+
+  /* background:
+    rgba(255,255,255,.035); */
+
+  /* border:
+    1px solid rgba(255,255,255,.06); */
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  opacity: .35;
+
+  transition:
+    opacity .3s ease,
+    transform .3s ease;
+}
+
+
+
+
+
+/* LIGHT MODE */
+
+[data-theme="light"]
+.back-top-message {
+  color:
+    rgba(6,33,58,.58);
+
+  /* background:
+    rgba(6,33,58,.035); */
+
+  /* border-color:
+    rgba(6,33,58,.07); */
 }

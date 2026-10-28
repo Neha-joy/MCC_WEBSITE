@@ -1,4 +1,5 @@
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -55,11 +56,27 @@ export default function Footer() {
             <FaFacebookF />
           </a>
 
+          <a
+            href="YOUR_TWITTER_LINK"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="MCC Group X"
+          >
+            <FaXTwitter />
+          </a>
+
         </div>
 
 
-        <a href="#home" className="back-top">
-          BACK TO TOP ↑
+        <a
+          href="#home"
+          className="back-top glossy-top"
+          aria-label="Back to top"
+        >
+          <ArrowUp size={25} />
+          <span className="back-top-message">
+            Go to top
+          </span>
         </a>
 
       </div>
@@ -78,7 +95,7 @@ export default function Footer() {
           Sharjah · Dubai · Ajman · Abu Dhabi · UAE
         </span>
 
-        
+
       </div>
 
     </footer>

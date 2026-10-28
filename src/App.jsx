@@ -14,6 +14,7 @@ import useTheme from './hooks/useTheme';
 import ScrollConstructionBackground from './components/ScrollConstructionBackground';
 import MajorClients from './components/MajorClients';
 import WhatsAppButton from './components/WhatsAppButton';
+import BuildingGame from './components/BuildingGame';
 
 export default function App() {
    const { theme, toggleTheme } = useTheme();
@@ -35,6 +36,7 @@ export default function App() {
         {/* <Gallery /> */}
         <Coverage />
         <Contact />
+        <BuildingGame />
       </main>
       <Footer />
       <WhatsAppButton />
