@@ -5628,3 +5628,420 @@ button,
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MODERN TRADES SECTION
+========================================= */
+
+.trades-modern {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+
+/* HEADING */
+
+.trades-modern-head {
+  width: min(var(--max), calc(100% - 48px));
+  margin: 0 auto 60px;
+
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 70px;
+
+  align-items: end;
+}
+
+
+.trades-modern-head h2 {
+  margin: 12px 0 0;
+
+  font-family: "Barlow Condensed", sans-serif;
+
+  font-size: clamp(52px, 6vw, 84px);
+
+  line-height: .92;
+
+  text-transform: uppercase;
+
+  color: var(--text);
+}
+
+
+.trades-modern-head h2 span {
+  color: var(--accent);
+}
+
+
+.trades-modern-head p {
+  max-width: 520px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* LIST */
+
+.trades-modern-list {
+  width: min(var(--max), calc(100% - 48px));
+  margin: auto;
+
+  border-top:
+    1px solid rgba(80, 190, 235, .18);
+}
+
+
+/* ROW */
+
+.trade-modern-row {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    80px
+    1fr
+    1.3fr
+    50px;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 28px 18px;
+
+  border-bottom:
+    1px solid rgba(80, 190, 235, .14);
+
+  overflow: hidden;
+
+  transition:
+    padding .35s ease,
+    background .35s ease,
+    transform .35s ease;
+}
+
+
+/* GLOSSY HOVER BACKGROUND */
+
+.trade-modern-row::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 174, 232, .12),
+      rgba(255,255,255,.035),
+      transparent
+    );
+
+  transform: translateX(-100%);
+
+  transition:
+    transform .55s ease;
+
+  z-index: 0;
+}
+
+
+.trade-modern-row:hover::before {
+  transform: translateX(0);
+}
+
+
+.trade-modern-row:hover {
+  padding-left: 30px;
+
+  background:
+    rgba(0, 174, 232, .025);
+}
+
+
+/* KEEP CONTENT ABOVE BG */
+
+.trade-modern-row > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* NUMBER */
+
+.trade-modern-number {
+  color: var(--accent);
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  opacity: .65;
+}
+
+
+/* TITLE */
+
+.trade-modern-row h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size: clamp(24px, 2.2vw, 34px);
+
+  text-transform: uppercase;
+
+  letter-spacing: .02em;
+}
+
+
+/* DESCRIPTION */
+
+.trade-modern-row p {
+  margin: 0;
+
+  max-width: 520px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* ARROW */
+
+.trade-modern-arrow {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--accent);
+
+  border:
+    1px solid rgba(0,174,232,.28);
+
+  background:
+    rgba(0,174,232,.05);
+
+  transition:
+    transform .35s ease,
+    background .35s ease,
+    color .35s ease;
+}
+
+
+.trade-modern-row:hover
+.trade-modern-arrow {
+  transform:
+    rotate(45deg)
+    scale(1.08);
+
+  background: var(--accent);
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   LIGHT MODE
+========================================= */
+
+[data-theme="light"]
+.trade-modern-row {
+  border-color:
+    rgba(5,80,120,.12);
+}
+
+
+[data-theme="light"]
+.trades-modern-list {
+  border-color:
+    rgba(5,80,120,.16);
+}
+
+
+[data-theme="light"]
+.trade-modern-row::before {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,140,205,.10),
+      rgba(255,255,255,.65),
+      transparent
+    );
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .trades-modern {
+    padding: 85px 0;
+  }
+
+
+  .trades-modern-head {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+  }
+
+
+  .trade-modern-row {
+    grid-template-columns:
+      52px
+      1fr
+      38px;
+
+    gap: 12px;
+
+    padding:
+      22px
+      8px;
+  }
+
+
+  .trade-modern-row p {
+    grid-column:
+      2 / 4;
+
+    margin-top: -4px;
+  }
+
+
+  .trade-modern-arrow {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+}
+
+
+
+
+
+
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--text);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.10),
+      rgba(0,174,232,.05)
+    );
+
+  border:
+    1px solid rgba(0,174,232,.18);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition:
+    transform .3s ease,
+    background .3s ease,
+    color .3s ease,
+    box-shadow .3s ease;
+}
+
+.footer-socials a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-4px);
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,174,232,.85),
+      rgba(0,110,180,.75)
+    );
+
+  box-shadow:
+    0 10px 25px rgba(0,174,232,.20);
+}
+
+
+/* INSTAGRAM HOVER */
+
+.footer-socials a:nth-child(2):hover {
+  background:
+    linear-gradient(
+      135deg,
+      #833ab4,
+      #fd1d1d,
+      #fcb045
+    );
+}
+
+
+
+.developer-credit {
+  opacity: 0.30;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  transition:
+    opacity .3s ease;
+}
+
+.developer-credit:hover {
+  opacity: 0.55;
+}

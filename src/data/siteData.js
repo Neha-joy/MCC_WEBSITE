@@ -10,16 +10,19 @@ export const images = {
   whyUs: '/images/why-us.png',
 };
 
-export const services = [
-  { title: 'Shuttering Carpenters', icon: Hammer, text: 'Experienced formwork and shuttering crews for concrete structures.' },
-  { title: 'Steel Fixers', icon: Layers3, text: 'Reliable reinforcement teams for slabs, columns, beams and foundations.' },
-  { title: 'Masons', icon: Building2, text: 'Blockwork, plastering and general masonry manpower for active sites.' },
-  { title: 'General Helpers', icon: Users, text: 'Site-ready support workforce for material handling and daily operations.' },
-  { title: 'Electricians', icon: Cable, text: 'Construction electricians and MEP support crews for project requirements.' },
-  { title: 'Plumbers', icon: Pipette, text: 'Skilled plumbing manpower for installation and site coordination.' },
-  { title: 'Painters', icon: Paintbrush, text: 'Interior and exterior painting teams for project finishing stages.' },
-  { title: 'Scaffolders & Riggers', icon: Ruler, text: 'Safety-focused manpower for access, lifting support and structural works.' },
-];
+// export const services = [
+//   { title: 'Shuttering Carpenters', icon: Hammer, text: 'Experienced formwork and shuttering crews for concrete structures.' },
+//   { title: 'Steel Fixers', icon: Layers3, text: 'Reliable reinforcement teams for slabs, columns, beams and foundations.' },
+//   { title: 'Masons', icon: Building2, text: 'Blockwork, plastering and general masonry manpower for active sites.' },
+//   { title: 'General Helpers', icon: Users, text: 'Site-ready support workforce for material handling and daily operations.' },
+//   { title: 'Electricians', icon: Cable, text: 'Construction electricians and MEP support crews for project requirements.' },
+//   { title: 'Plumbers', icon: Pipette, text: 'Skilled plumbing manpower for installation and site coordination.' },
+//   { title: 'Painters', icon: Paintbrush, text: 'Interior and exterior painting teams for project finishing stages.' },
+//   { title: 'Scaffolders & Riggers', icon: Ruler, text: 'Safety-focused manpower for access, lifting support and structural works.' },
+// ];
+
+
+
 
 export const projects = [
   { name: 'High-Rise Construction', place: 'Dubai', image: '/images/project-01.png', tag: 'MANPOWER SUPPLY' },

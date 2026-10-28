@@ -9,7 +9,7 @@ export default function Navbar({ theme, toggleTheme }) {
     <header className="nav-wrap">
       <a className="brand" href="#home" aria-label="Munnasah home">
         <img className="brand-logo" src="/assets/mcc-logo.png" alt="MCC Group logo" />
-        <div><strong>MUNNASAH</strong><span>CONCRETE CARPENTER</span></div>
+        <div><strong>MCC ON DEMAND</strong><span>LABOUR SUPPLY L.L.C</span></div>
       </a>
 
       <nav className={open ? 'nav-links open' : 'nav-links'}>
