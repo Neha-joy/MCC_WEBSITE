@@ -36,7 +36,7 @@ export default function ManpowerDashboard() {
               <motion.circle className="orbit-progress" cx="120" cy="120" r="92" initial={{ pathLength: 0 }} whileInView={{ pathLength: .92 }} transition={{ duration: 1.5, ease: [.22, 1, .36, 1] }} viewport={{ once: true }} />
               <motion.circle className="orbit-progress orbit-second" cx="120" cy="120" r="75" initial={{ pathLength: 0 }} whileInView={{ pathLength: .74 }} transition={{ duration: 1.35, delay: .18 }} viewport={{ once: true }} />
             </svg>
-            <div className="orbit-center"><Users /><strong><Counter end={5000} /></strong><span>GROUP WORKFORCE</span></div>
+            <div className="orbit-center"><Users /><strong><Counter end={10000} /></strong><span>GROUP WORKFORCE</span></div>
             <div className="orbit-tag tag-a"><b>8+</b><span>Core trades</span></div>
             <div className="orbit-tag tag-b"><b>4</b><span>Emirates</span></div>
             <div className="orbit-tag tag-c"><b>24/7</b><span>Ops focus</span></div>
@@ -51,7 +51,7 @@ export default function ManpowerDashboard() {
         </div>
 
         <div className="pulse-strip">
-          <div><span>WORKFORCE</span><strong><Counter end={5000} /></strong></div><i />
+          <div><span>WORKFORCE</span><strong><Counter end={10000} /></strong></div><i />
           <div><span>CLIENTS</span><strong><Counter end={200} /></strong></div><i />
           <div><span>PROJECTS</span><strong><Counter end={300} /></strong></div><i />
           <div><span>UAE COVERAGE</span><strong>SHJ · DXB · AJM · AUH</strong></div>
