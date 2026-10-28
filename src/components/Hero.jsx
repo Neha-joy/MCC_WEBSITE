@@ -24,10 +24,13 @@ export default function Hero() {
           MCC GROUP OF COMPANIES · UAE
         </motion.div>
         <motion.h1 initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, delay: .2 }}>
-          BUILDING UAE<br /><span>WITH SKILLED MANPOWER.</span>
+          CONSTRUCTION MANPOWER SUPPLY<br /><span>IN UAE</span>
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .45 }}>
-          Munnasah Concrete Carpenter supplies dependable construction manpower across Sharjah, Dubai, Ajman and Abu Dhabi — ready for demanding projects and daily site operations.
+          Munnasah Concrete Carpenter provides skilled construction manpower,
+          civil workforce, MEP manpower and project support across Sharjah,
+          Dubai, Ajman and Abu Dhabi for demanding construction projects
+          and daily site operations.
         </motion.p>
         <motion.div className="hero-actions" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .65 }}>
           <a className="btn primary" href="#contact">Request Manpower <ArrowRight size={18} /></a>
