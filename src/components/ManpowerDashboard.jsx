@@ -6,9 +6,28 @@ import { capabilityBars, manpowerStats } from '../data/siteData';
 
 function CapabilityBar({ label, value, detail, index }) {
   return (
-    <motion.div className="capability-row" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: index * .08 }} viewport={{ once: true, amount: .4 }}>
-      <div className="capability-head"><div><strong>{label}</strong><span>{detail}</span></div><b>{value}%</b></div>
-      <div className="capability-track"><motion.i initial={{ width: 0 }} whileInView={{ width: `${value}%` }} transition={{ duration: 1.1, delay: .12 + index * .08, ease: [.22, 1, .36, 1] }} viewport={{ once: true }} /></div>
+    <motion.div
+      className="capability-row"
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * .08 }}
+      viewport={{ once: true, amount: .4 }}
+    >
+      <div className="capability-head">
+        <div>
+          <strong>{label}</strong>
+          <span>{detail}</span>
+        </div>
+
+        <b>{value}%</b>
+      </div>
+
+      <div
+        className="capability-track"
+        style={{ "--target-width": `${value}%` }}
+      >
+        <i />
+      </div>
     </motion.div>
   );
 }
@@ -29,7 +48,7 @@ export default function ManpowerDashboard() {
         </div>
 
         <div className="dashboard-panels">
-          <motion.div className="workforce-orbit" initial={{ opacity: 0, scale: .92 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: .35 }} transition={{ duration: .7 }}>
+          {/* <motion.div className="workforce-orbit" initial={{ opacity: 0, scale: .92 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: .35 }} transition={{ duration: .7 }}>
             <div className="orbit-glow" />
             <svg className="orbit-ring" viewBox="0 0 240 240" aria-hidden="true">
               <circle className="orbit-base" cx="120" cy="120" r="92" />
@@ -40,7 +59,7 @@ export default function ManpowerDashboard() {
             <div className="orbit-tag tag-a"><b>8+</b><span>Core trades</span></div>
             <div className="orbit-tag tag-b"><b>4</b><span>Emirates</span></div>
             <div className="orbit-tag tag-c"><b>24/7</b><span>Ops focus</span></div>
-          </motion.div>
+          </motion.div> */}
 
           <div className="capability-panel">
             <div className="panel-head"><div><span>DEPLOYMENT CAPABILITY</span><h3>Trade coverage at a glance</h3></div><span className="live-pill"><i /> LIVE VISUAL</span></div>

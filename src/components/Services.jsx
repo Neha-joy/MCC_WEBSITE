@@ -4,43 +4,37 @@ import SectionTitle from './SectionTitle';
 
 export default function Services() {
   const trades = [
-  {
-    number: "01",
-    title: "CIVIL & STRUCTURAL",
-    description:
-      "Skilled manpower for structural, concrete, blockwork and general civil construction activities."
-  },
-  {
-    number: "02",
-    title: "MEP WORKFORCE",
-    description:
-      "Qualified manpower supporting electrical, plumbing and mechanical project requirements."
-  },
-  {
-    number: "03",
-    title: "FINISHING WORKS",
-    description:
-      "Experienced teams for painting, finishing, fit-out and final-stage construction works."
-  },
-  {
-    number: "04",
-    title: "SITE SUPPORT",
-    description:
-      "Reliable site support manpower for material handling, logistics and general project operations."
-  },
-  {
-    number: "05",
-    title: "ACCESS & HEIGHT WORKS",
-    description:
-      "Safety-focused manpower for scaffolding, access work and height-related site operations."
-  },
-  {
-    number: "06",
-    title: "SUPERVISION & COORDINATION",
-    description:
-      "Site supervisors and coordination staff supporting daily construction activities."
-  }
-];
+    {
+      number: "01",
+      title: "CIVIL & STRUCTURAL",
+      description:
+        "Skilled manpower for structural, concrete, blockwork and general civil construction activities."
+    },
+    {
+      number: "02",
+      title: "MEP WORKFORCE",
+      description:
+        "Qualified manpower supporting electrical, plumbing and mechanical project requirements."
+    },
+    {
+      number: "03",
+      title: "FITOUT WORKS",
+      description:
+        "Skilled manpower for interior fit-out, painting, gypsum, ceiling, partition and finishing works."
+    },
+    {
+      number: "04",
+      title: "FACILITY MANAGEMENT",
+      description:
+        "Reliable manpower support for facility operations, housekeeping, maintenance assistance and daily site services."
+    },
+    {
+      number: "05",
+      title: "MAINTENANCE",
+      description:
+        "Experienced manpower for preventive maintenance, repair works, general upkeep and ongoing facility support."
+    },
+  ];
   return (
     // <section className="section services" id="services">
     //   <SectionTitle eyebrow="OUR MANPOWER" title="THE CREWS YOUR PROJECT NEEDS." text="From core civil trades to MEP and support workers, we supply manpower built for active UAE construction sites." />
@@ -60,62 +54,62 @@ export default function Services() {
     //   </div>
     // </section>
 
-    <section className="trades-modern" id="trades">
+    <section className="trades-modern" id="services">
 
-  <div className="trades-modern-head">
+      <div className="trades-modern-head">
 
-    <div>
-      <div className="eyebrow">
-        OUR MANPOWER CAPABILITIES
-      </div>
+        <div>
+          <div className="eyebrow">
+            OUR MANPOWER CAPABILITIES
+          </div>
 
-      <h2>
-        WORKFORCE FOR
-        <br />
-        <span>EVERY PROJECT STAGE.</span>
-      </h2>
-    </div>
-
-    <p>
-      From core construction activities to MEP, finishing and site
-      support, MCC provides experienced manpower for projects across
-      the UAE.
-    </p>
-
-  </div>
-
-
-  <div className="trades-modern-list">
-
-    {trades.map((trade) => (
-
-      <div
-        className="trade-modern-row"
-        key={trade.number}
-      >
-
-        <span className="trade-modern-number">
-          {trade.number}
-        </span>
-
-        <h3>
-          {trade.title}
-        </h3>
+          <h2>
+            WORKFORCE FOR
+            <br />
+            <span>EVERY PROJECT STAGE.</span>
+          </h2>
+        </div>
 
         <p>
-          {trade.description}
+          From core construction activities to MEP, finishing and site
+          support, MCC provides experienced manpower for projects across
+          the UAE.
         </p>
-
-        <span className="trade-modern-arrow">
-          ↗
-        </span>
 
       </div>
 
-    ))}
 
-  </div>
+      <div className="trades-modern-list">
 
-</section>
+        {trades.map((trade) => (
+
+          <div
+            className="trade-modern-row"
+            key={trade.number}
+          >
+
+            <span className="trade-modern-number">
+              {trade.number}
+            </span>
+
+            <h3>
+              {trade.title}
+            </h3>
+
+            <p>
+              {trade.description}
+            </p>
+
+            <span className="trade-modern-arrow">
+              ↗
+            </span>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </section>
   );
 }

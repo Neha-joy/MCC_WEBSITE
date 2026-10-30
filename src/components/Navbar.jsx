@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import { ArrowRight, Menu, Moon, Sun, X } from 'lucide-react';
 
 export default function Navbar({ theme, toggleTheme }) {
@@ -7,15 +8,36 @@ export default function Navbar({ theme, toggleTheme }) {
 
   return (
     <header className="nav-wrap">
-      <a className="brand" href="#home" aria-label="Munnasah home">
+      <a className="brand" href="/#home" aria-label="Munnasah home">
         <img className="brand-logo" src="/assets/mcc-logo.png" alt="MCC Group logo" />
-        <div><strong>MCC ON DEMAND</strong><span>LABOUR SUPPLY L.L.C</span></div>
+        <div><strong>MCC GROUP</strong><span>OF COMAPNY</span></div>
       </a>
 
       <nav className={open ? 'nav-links open' : 'nav-links'}>
-        {links.map((link) => (
-          <a key={link} href={`#${link.toLowerCase()}`} onClick={() => setOpen(false)}>{link}</a>
-        ))}
+        {links.map((link) => {
+
+          if (link === "About") {
+            return (
+              <Link
+                key={link}
+                to="/about"
+                onClick={() => setOpen(false)}
+              >
+                About
+              </Link>
+            );
+          }
+
+          return (
+            <a
+              key={link}
+              href={`/#${link.toLowerCase()}`}
+              onClick={() => setOpen(false)}
+            >
+              {link}
+            </a>
+          );
+        })}
         <a className="nav-cta" href="#contact" onClick={() => setOpen(false)}>
           Request Manpower <ArrowRight size={16} />
         </a>
