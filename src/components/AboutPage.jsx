@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import JourneySection from "../components/JourneySection";
 import {
   Target,
   Eye,
@@ -17,6 +18,21 @@ export default function AboutPage() {
       ===================================================== */}
 
       <section className="about-intro">
+
+        <video
+          className="about-intro-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+            src="/video/about-bg.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div className="about-intro-overlay" />
 
         <div className="about-intro-left">
 
@@ -234,7 +250,7 @@ export default function AboutPage() {
       {/* =====================================================
           JOURNEY
       ===================================================== */}
-      <div className="journey-timeline">
+      {/* <div className="journey-timeline">
 
         <motion.div
           className="journey-item"
@@ -336,7 +352,10 @@ export default function AboutPage() {
           </div>
         </motion.div>
 
-      </div>
+      </div> */}
+
+
+      <JourneySection />
 
       {/* =====================================================
           TEAM
@@ -439,7 +458,22 @@ export default function AboutPage() {
 
       <section className="about-strength-section">
 
-        <div>
+        <video
+          className="about-strength-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+            src="/video/bg-video1.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div className="about-strength-overlay" />
+
+        <div className="about-strength-content">
           <div className="eyebrow">
             MCC GROUP
           </div>
@@ -451,11 +485,11 @@ export default function AboutPage() {
           </h2>
         </div>
 
-        <p><i>
+        <p>
           Our growth continues to be built around workforce strength,
           reliable operations, client trust and the ability to respond
           to changing project requirements across the UAE.
-        </i></p>
+        </p>
 
       </section>
 

@@ -7600,13 +7600,23 @@ button,
    ABOUT PAGE INTRO
 ===================================================== */
 
+:root {
+  --navbar-height: 97px;
+}
+
+.about-page {
+  padding-top: 80px;
+}
+
+.about-intro {
+  margin-top: 0 !important;
+}
+
 .about-intro {
   position: relative;
 
   display: grid;
-
-  grid-template-columns:
-    1.15fr .85fr;
+  grid-template-columns: 1.15fr .85fr;
 
   gap: 90px;
 
@@ -7615,12 +7625,13 @@ button,
   min-height: 70vh;
 
   padding:
-    150px 7% 90px;
+    1000px 7% 90px;
+
+  overflow: hidden;
 
   border-bottom:
-    1px solid rgba(0, 174, 232, .12);
+    1px solid rgba(0, 174, 232, 0.12);
 }
-
 
 /* LEFT SIDE */
 
@@ -8633,177 +8644,545 @@ button,
 
 
 /* =====================================================
-   TIMELINE
+   JOURNEY SECTION
 ===================================================== */
 
-.journey-timeline {
+.journey-section {
   position: relative;
 
-  max-width: 1100px;
+  width: 100%;
 
-  margin-top: 30px;
-}
+  padding:
+    110px 7% 120px;
 
-
-/* VERTICAL LINE */
-
-.journey-timeline::before {
-  content: "";
-
-  position: absolute;
-
-  top: 0;
-  bottom: 0;
-
-  left: 145px;
-
-  width: 1px;
-
-  background:
-    linear-gradient(
-      to bottom,
-      transparent,
-      rgba(0, 174, 232, 0.55),
-      rgba(0, 174, 232, 0.2),
-      transparent
-    );
+  overflow: hidden;
 }
 
 
 /* =====================================================
-   EACH JOURNEY ITEM
+   HEADING
 ===================================================== */
 
-.journey-item {
+.journey-section .section-heading {
+  position: relative;
+
+  z-index: 5;
+
+  max-width: 950px;
+
+  margin-bottom: 25px;
+}
+
+
+.journey-section .section-heading h2 {
+  margin:
+    12px 0 20px;
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size:
+    clamp(52px, 6vw, 86px);
+
+  line-height: .92;
+
+  text-transform: uppercase;
+}
+
+
+.journey-section .section-heading h2 span {
+  color:
+    var(--accent);
+}
+
+
+.journey-intro {
+  max-width: 650px;
+
+  color:
+    var(--muted);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+
+/* =====================================================
+   SCROLL STORY
+===================================================== */
+
+.journey-scroll-story {
   position: relative;
 
   display: grid;
 
   grid-template-columns:
-    120px minmax(0, 1fr);
+    75px minmax(0, 1fr);
 
-  gap: 50px;
+  gap: 45px;
 
-  padding:
-    0 0 65px;
+  width: 100%;
 
-  will-change:
-    transform,
-    opacity;
+  max-width: 1100px;
+
+  margin-top: 10px;
 }
 
-
-/* TIMELINE DOT */
-
-.journey-item::before {
-  content: "";
-
-  position: absolute;
-
-  left: 138px;
-
-  top: 8px;
-
-  width: 14px;
-  height: 14px;
-
-  border-radius: 50%;
-
-  background:
-    var(--accent);
-
-  box-shadow:
-    0 0 0 6px rgba(0, 174, 232, 0.09),
-    0 0 20px rgba(0, 174, 232, 0.5);
-
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-
-/* DOT HOVER */
-
-.journey-item:hover::before {
-  transform: scale(1.25);
-
-  box-shadow:
-    0 0 0 9px rgba(0, 174, 232, 0.08),
-    0 0 30px rgba(0, 174, 232, 0.65);
-}
 
 
 /* =====================================================
-   JOURNEY YEAR / LABEL
+   PROGRESS BAR
 ===================================================== */
 
-.journey-year {
-  padding-top: 3px;
+.journey-progress {
+  position: sticky;
+
+  top: 180px;
+
+  align-self: start;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  height: 330px;
+
+  z-index: 5;
+}
+
+
+.journey-progress-line {
+  position: relative;
+
+  width: 2px;
+
+  height: 235px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background:
+    rgba(0, 174, 232, .13);
+}
+
+
+.journey-progress-active {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(to bottom,
+      #11bdf5,
+      rgba(0, 174, 232, .35));
+
+  box-shadow:
+    0 0 18px rgba(0, 174, 232, .55);
+}
+
+
+.journey-progress span {
+  margin-top: 18px;
+
+  color:
+    var(--accent);
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size: 29px;
+
+  font-weight: 700;
+}
+
+
+.journey-progress small {
+  margin-top: 1px;
+
+  color:
+    var(--muted);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: .1em;
+}
+
+
+
+/* =====================================================
+   LIST
+===================================================== */
+
+.journey-scroll-list {
+  position: relative;
+
+  width: 100%;
+}
+
+
+
+/* =====================================================
+   EACH SCROLL STEP
+===================================================== */
+
+.journey-scroll-step {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  min-height: 72vh;
+}
+
+
+
+/* =====================================================
+   CARD WRAPPER
+===================================================== */
+
+.journey-scroll-card {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    105px 30px minmax(0, 1fr);
+
+  gap: 23px;
+
+  align-items: start;
+
+  width: 100%;
+
+  max-width: 940px;
+
+  padding:
+    35px 20px 35px 0;
+
+  will-change:
+    transform,
+    opacity,
+    filter;
+}
+
+
+
+/* =====================================================
+   YEAR
+===================================================== */
+
+.journey-scroll-year {
+  padding-top: 10px;
 
   color:
     var(--accent);
 
   font-size: 12px;
 
-  font-weight: 700;
+  font-weight: 800;
 
-  letter-spacing: 0.12em;
-
-  text-transform: uppercase;
+  line-height: 1;
 
   text-align: right;
 
+  text-transform: uppercase;
+
+  letter-spacing: .13em;
+
   transition:
-    color 0.3s ease,
-    transform 0.3s ease;
+    transform .45s ease;
 }
 
 
-.journey-item:hover .journey-year {
+.journey-scroll-step.active .journey-scroll-year {
   transform:
-    translateX(-4px);
+    translateX(-6px);
 }
+
 
 
 /* =====================================================
-   JOURNEY CONTENT
+   TIMELINE DOT
 ===================================================== */
 
-.journey-content {
+.journey-scroll-dot {
   position: relative;
 
-  padding-left: 18px;
+  width: 17px;
+
+  height: 17px;
+
+  margin-top: 7px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 174, 232, .15);
+
+  border:
+    2px solid rgba(0, 174, 232, .35);
 
   transition:
-    transform 0.4s ease,
-    opacity 0.4s ease;
+    transform .5s ease,
+    background .5s ease,
+    border-color .5s ease,
+    box-shadow .5s ease;
 }
 
 
-.journey-item:hover .journey-content {
+
+/* LINE DOWN */
+
+.journey-scroll-dot::after {
+  content: "";
+
+  position: absolute;
+
+  top: 25px;
+
+  left: 50%;
+
+  width: 1px;
+
+  height:
+    calc(72vh - 10px);
+
   transform:
-    translateX(7px);
+    translateX(-50%);
+
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 174, 232, .28),
+      rgba(0, 174, 232, .025));
 }
 
 
-.journey-content h3 {
+.journey-scroll-step:last-child .journey-scroll-dot::after {
+  display: none;
+}
+
+
+
+/* ACTIVE DOT */
+
+.journey-scroll-step.active .journey-scroll-dot {
+  transform:
+    scale(1.28);
+
+  background:
+    var(--accent);
+
+  border-color:
+    var(--accent);
+
+  box-shadow:
+    0 0 0 8px rgba(0, 174, 232, .07),
+
+    0 0 28px rgba(0, 174, 232, .68);
+}
+
+
+
+/* =====================================================
+   CONTENT CARD
+===================================================== */
+
+.journey-scroll-content {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 750px;
+
+  padding:
+    30px 34px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  border:
+    1px solid rgba(0, 174, 232, .07);
+
+  background:
+    linear-gradient(135deg,
+      rgba(0, 174, 232, .02),
+      rgba(3, 10, 18, .13));
+
+  transition:
+    border-color .5s ease,
+    background .5s ease,
+    box-shadow .5s ease;
+}
+
+
+
+/* ACTIVE CARD */
+
+.journey-scroll-step.active .journey-scroll-content {
+  border-color:
+    rgba(0, 174, 232, .28);
+
+  background:
+    linear-gradient(135deg,
+      rgba(0, 174, 232, .095),
+      rgba(3, 10, 18, .36));
+
+  box-shadow:
+    0 28px 65px rgba(0, 0, 0, .17);
+}
+
+
+
+/* LEFT BLUE LINE */
+
+.journey-scroll-content::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 3px;
+
+  height: 0;
+
+  border-radius:
+    999px;
+
+  background:
+    var(--accent);
+
+  box-shadow:
+    0 0 15px rgba(0, 174, 232, .5);
+
+  transition:
+    height .7s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.journey-scroll-step.active .journey-scroll-content::before {
+  height: 100%;
+}
+
+
+
+/* GLOW */
+
+.journey-scroll-content::after {
+  content: "";
+
+  position: absolute;
+
+  top: -140px;
+
+  right: -100px;
+
+  width: 200px;
+
+  height: 200px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 174, 232, .10);
+
+  filter:
+    blur(28px);
+
+  opacity: 0;
+
+  transition:
+    opacity .6s ease;
+
+  pointer-events: none;
+}
+
+
+.journey-scroll-step.active .journey-scroll-content::after {
+  opacity: 1;
+}
+
+
+
+/* STEP LABEL */
+
+.journey-scroll-content>span {
+  position: relative;
+
+  z-index: 2;
+
+  display: block;
+
+  margin-bottom: 11px;
+
+  color:
+    var(--accent);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+
+/* TITLE */
+
+.journey-scroll-content h3 {
+  position: relative;
+
+  z-index: 2;
+
   margin:
-    0 0 12px;
+    0 0 16px;
 
   font-family:
     "Barlow Condensed",
     sans-serif;
 
-  font-size: 31px;
+  font-size:
+    clamp(32px, 3vw, 46px);
 
   line-height: 1;
 
-  text-transform: uppercase;
+  color:
+    var(--text);
+
+  text-transform:
+    uppercase;
 }
 
 
-.journey-content p {
-  max-width: 720px;
+
+/* DESCRIPTION */
+
+.journey-scroll-content p {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 690px;
 
   margin: 0;
 
@@ -8813,51 +9192,24 @@ button,
   font-size: 15px;
 
   line-height: 1.9;
-}
-
-
-/* =====================================================
-   OPTIONAL CONTENT GLOW ON HOVER
-===================================================== */
-
-.journey-content::before {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-
-  top: 0;
-
-  width: 2px;
-
-  height: 0;
-
-  border-radius: 999px;
-
-  background:
-    var(--accent);
-
-  opacity: 0;
 
   transition:
-    height 0.4s ease,
-    opacity 0.4s ease;
+    color .4s ease;
 }
 
 
-.journey-item:hover .journey-content::before {
-  height: 100%;
-
-  opacity: 0.7;
+.journey-scroll-step.active .journey-scroll-content p {
+  color:
+    rgba(255, 255, 255, .72);
 }
+
 
 
 /* =====================================================
-   JOURNEY ACHIEVEMENTS
+   GROWTH SUMMARY
 ===================================================== */
 
-.journey-achievements {
+.journey-growth-summary {
   display: grid;
 
   grid-template-columns:
@@ -8865,242 +9217,127 @@ button,
 
   gap: 16px;
 
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 
-.journey-achievements > div {
+
+/* SUMMARY CARD */
+
+.journey-summary-card {
   position: relative;
 
-  padding:
-    28px 22px;
-
-  text-align: center;
-
-  overflow: hidden;
-
-  border-radius: 18px;
-
-  border:
-    1px solid
-    rgba(0, 174, 232, 0.13);
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.025),
-      rgba(0, 174, 232, 0.02)
-    );
-
-  transition:
-    transform 0.35s ease,
-    border-color 0.35s ease,
-    background 0.35s ease;
-}
-
-
-.journey-achievements > div:hover {
-  transform:
-    translateY(-7px);
-
-  border-color:
-    rgba(0, 174, 232, 0.38);
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(0, 174, 232, 0.07),
-      rgba(255, 255, 255, 0.02)
-    );
-}
-
-
-.journey-achievements svg {
-  width: 25px;
-  height: 25px;
-
-  margin-bottom: 15px;
-
-  color:
-    var(--accent);
-}
-
-
-.journey-achievements strong {
-  display: block;
-
-  font-family:
-    "Barlow Condensed",
-    sans-serif;
-
-  font-size: 42px;
-
-  line-height: 1;
-
-  color:
-    var(--accent);
-}
-
-
-.journey-achievements span {
-  display: block;
-
-  margin-top: 7px;
-
-  color:
-    var(--muted);
-
-  font-size: 10px;
-
-  font-weight: 600;
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.08em;
-}
-
-
-/* =====================================================
-   JOURNEY GROWTH COMPARISON
-===================================================== */
-
-.journey-growth {
-  display: grid;
-
-  grid-template-columns:
-    1fr auto 1fr 1fr auto 1fr;
-
-  gap: 18px;
-
-  align-items: center;
-
-  margin-top: 65px;
-}
-
-
-/* GROWTH CARD */
-
-.growth-card {
-  position: relative;
-
-  min-height: 190px;
+  min-height: 195px;
 
   padding:
-    28px;
+    27px 25px;
 
   overflow: hidden;
 
   border-radius: 20px;
 
   border:
-    1px solid
-    rgba(0, 174, 232, 0.14);
+    1px solid rgba(0, 174, 232, .13);
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.03),
-      rgba(3, 10, 18, 0.28)
-    );
+    linear-gradient(145deg,
+      rgba(255, 255, 255, .025),
+      rgba(0, 174, 232, .02));
 
   transition:
-    transform 0.35s ease,
-    border-color 0.35s ease,
-    box-shadow 0.35s ease;
+    transform .35s ease,
+    border-color .35s ease,
+    background .35s ease;
 }
 
 
-/* GLOW */
-
-.growth-card::before {
-  content: "";
-
-  position: absolute;
-
-  width: 160px;
-  height: 160px;
-
-  top: -100px;
-  right: -80px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(0, 174, 232, 0.08);
-
-  filter:
-    blur(18px);
-
-  pointer-events: none;
-}
-
-
-.growth-card:hover {
+.journey-summary-card:hover {
   transform:
     translateY(-7px);
 
   border-color:
-    rgba(0, 174, 232, 0.4);
+    rgba(0, 174, 232, .4);
 
-  box-shadow:
-    0 18px 40px
-    rgba(0, 0, 0, 0.14);
-}
-
-
-/* CURRENT CARD */
-
-.growth-card.highlight {
   background:
-    linear-gradient(
-      145deg,
-      rgba(0, 174, 232, 0.11),
-      rgba(3, 10, 18, 0.32)
-    );
-
-  border-color:
-    rgba(0, 174, 232, 0.28);
+    linear-gradient(145deg,
+      rgba(0, 174, 232, .08),
+      rgba(3, 10, 18, .20));
 }
 
 
-/* YEAR */
 
-.growth-card > span {
-  position: relative;
+/* ICON */
 
-  z-index: 2;
+.journey-summary-card>svg {
+  width: 24px;
 
-  display: block;
+  height: 24px;
 
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   color:
     var(--accent);
-
-  font-size: 11px;
-
-  font-weight: 700;
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.13em;
 }
 
 
-/* BIG NUMBER */
 
-.growth-card strong {
-  position: relative;
+/* LABEL */
 
-  z-index: 2;
-
+.journey-summary-card>span {
   display: block;
 
+  margin-bottom: 18px;
+
+  color:
+    var(--muted);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: .13em;
+}
+
+
+
+/* START -> CURRENT */
+
+.summary-growth {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+
+.summary-growth>div {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.summary-growth small {
+  margin-bottom: 4px;
+
+  color:
+    var(--muted);
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+.summary-growth strong {
   font-family:
     "Barlow Condensed",
     sans-serif;
 
-  font-size: 54px;
+  font-size: 36px;
 
   line-height: 1;
 
@@ -9109,146 +9346,249 @@ button,
 }
 
 
-.growth-card.highlight strong {
+.summary-growth>div:last-child strong {
   color:
     var(--accent);
 }
 
 
-/* LABEL */
-
-.growth-card p {
-  position: relative;
-
-  z-index: 2;
-
-  margin:
-    12px 0 5px;
-
+.summary-growth b {
   color:
-    var(--text);
+    var(--accent);
 
-  font-size: 13px;
+  font-size: 22px;
 
-  font-weight: 700;
+  font-weight: 400;
 
-  text-transform: uppercase;
+  opacity: .65;
 }
 
 
-/* SMALL TEXT */
 
-.growth-card small {
-  position: relative;
+/* OTHER SUMMARY NUMBERS */
 
-  z-index: 2;
+.summary-main {
+  display: block;
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size: 45px;
+
+  line-height: 1;
+
+  color:
+    var(--accent);
+}
+
+
+.journey-summary-card>p {
+  margin:
+    7px 0 0;
 
   color:
     var(--muted);
 
   font-size: 11px;
-
-  line-height: 1.5;
 }
 
-
-/* =====================================================
-   GROWTH ARROWS
-===================================================== */
-
-.growth-arrow {
-  display: grid;
-
-  place-items: center;
-
-  width: 40px;
-
-  color:
-    var(--accent);
-
-  font-size: 31px;
-
-  opacity: 0.75;
-
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
-}
-
-
-.growth-arrow:hover {
-  transform:
-    translateX(4px);
-
-  opacity: 1;
-}
 
 
 /* =====================================================
    LIGHT MODE
 ===================================================== */
 
-[data-theme="light"]
-.growth-card {
+[data-theme="light"] .journey-scroll-content {
   background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.96),
-      rgba(235, 248, 255, 0.82)
-    );
+    rgba(255, 255, 255, .4);
+}
+
+
+[data-theme="light"] .journey-scroll-step.active .journey-scroll-content {
+  background:
+    rgba(255, 255, 255, .88);
 
   border-color:
-    rgba(0, 100, 160, 0.13);
+    rgba(0, 120, 180, .20);
+
+  box-shadow:
+    0 20px 50px rgba(0, 70, 120, .08);
 }
 
 
-[data-theme="light"]
-.growth-card.highlight {
+[data-theme="light"] .journey-scroll-step.active .journey-scroll-content p {
+  color:
+    var(--muted);
+}
+
+
+[data-theme="light"] .journey-summary-card {
   background:
-    linear-gradient(
-      145deg,
-      rgba(0, 145, 210, 0.1),
-      rgba(255, 255, 255, 0.94)
-    );
+    rgba(255, 255, 255, .78);
 }
 
-
-[data-theme="light"]
-.journey-achievements > div {
-  background:
-    rgba(255, 255, 255, 0.82);
-}
 
 
 /* =====================================================
-   FRAMER MOTION SUPPORT
+   TABLET
 ===================================================== */
 
-/*
-  Your JSX should use:
+@media (max-width: 1000px) {
 
-  viewport={{ once: false, amount: 0.35 }}
+  .journey-scroll-story {
+    grid-template-columns:
+      50px 1fr;
 
-  Example:
+    gap: 25px;
+  }
 
-  initial={{ opacity: 0, x: -80 }}
-  whileInView={{ opacity: 1, x: 0 }}
 
-  The next item can use x: 80.
+  .journey-scroll-card {
+    grid-template-columns:
+      80px 25px minmax(0, 1fr);
 
-  This CSS keeps the animations smooth.
-*/
+    gap: 17px;
+  }
 
-.journey-item,
-.growth-card,
-.journey-achievements > div {
-  backface-visibility:
-    hidden;
 
-  transform-style:
-    preserve-3d;
+  .journey-growth-summary {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
 }
 
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .journey-section {
+    padding:
+      75px 20px 85px;
+  }
+
+
+  .journey-section .section-heading h2 {
+    font-size:
+      47px;
+  }
+
+
+  .journey-scroll-story {
+    grid-template-columns:
+      26px 1fr;
+
+    gap: 10px;
+  }
+
+
+  .journey-progress {
+    top: 130px;
+
+    height: 250px;
+  }
+
+
+  .journey-progress-line {
+    height: 175px;
+  }
+
+
+  .journey-progress span {
+    font-size: 21px;
+  }
+
+
+  .journey-scroll-step {
+    min-height: 70vh;
+  }
+
+
+  .journey-scroll-card {
+    display: block;
+
+    padding:
+      25px 0;
+  }
+
+
+  .journey-scroll-year {
+    margin-bottom: 13px;
+
+    text-align: left;
+  }
+
+
+  .journey-scroll-dot {
+    display: none;
+  }
+
+
+  .journey-scroll-content {
+    padding:
+      25px 22px;
+
+    border-radius:
+      17px;
+  }
+
+
+  .journey-scroll-content h3 {
+    font-size:
+      31px;
+  }
+
+
+  .journey-scroll-content p {
+    font-size:
+      14px;
+
+    line-height:
+      1.8;
+  }
+
+
+  .journey-growth-summary {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .journey-summary-card {
+    min-height:
+      auto;
+  }
+
+}
+
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .journey-scroll-card,
+
+  .journey-scroll-content,
+
+  .journey-scroll-dot,
+
+  .journey-progress-active,
+
+  .journey-summary-card {
+
+    transition:
+      none !important;
+  }
+
+}
 
 /* =====================================================
    TABLET
@@ -9362,8 +9702,7 @@ button,
   }
 
 
-  .journey-item:hover
-  .journey-year {
+  .journey-item:hover .journey-year {
     transform:
       none;
   }
@@ -9386,8 +9725,7 @@ button,
   }
 
 
-  .journey-item:hover
-  .journey-content {
+  .journey-item:hover .journey-content {
     transform:
       translateX(3px);
   }
@@ -9410,7 +9748,7 @@ button,
   }
 
 
-  .journey-achievements > div {
+  .journey-achievements>div {
     padding:
       23px 15px;
   }
@@ -9457,8 +9795,7 @@ button,
 
   .growth-arrow:hover {
     transform:
-      rotate(90deg)
-      translateX(3px);
+      rotate(90deg) translateX(3px);
   }
 
 }
@@ -9498,7 +9835,7 @@ button,
   .journey-content,
   .journey-year,
   .growth-card,
-  .journey-achievements > div,
+  .journey-achievements>div,
   .growth-arrow {
     transition:
       none !important;
@@ -9600,7 +9937,7 @@ button,
   grid-template-columns: 0.9fr 1.1fr;
 
   gap: 70px;
-  
+
   align-items: center;
 
   margin: 40px 7% 110px;
@@ -9830,6 +10167,557 @@ button,
 
   .about-team-image {
     height: 380px;
+  }
+
+}
+
+
+
+
+/* =====================================================
+   ABOUT LAST SECTION WITH VIDEO BACKGROUND
+===================================================== */
+
+.about-strength-section {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+
+  margin: 40px 7% 110px;
+
+  padding: 70px;
+
+  min-height: 360px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  border:
+    1px solid rgba(0, 174, 232, 0.18);
+
+  background:
+    rgba(0, 0, 0, 0.55);
+}
+
+
+/* VIDEO BACKGROUND */
+
+.about-strength-video {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+
+  opacity: 0.55;
+
+  pointer-events: none;
+}
+
+
+/* DARK OVERLAY */
+
+.about-strength-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(90deg,
+      rgba(2, 10, 18, 0.68) 0%,
+      rgba(2, 10, 18, 0.48) 45%,
+      rgba(2, 10, 18, 0.28) 100%);
+  pointer-events: none;
+}
+
+
+/* CONTENT ABOVE VIDEO */
+
+.about-strength-content {
+  position: relative;
+
+  z-index: 3;
+}
+
+
+.about-strength-section h2 {
+  margin: 12px 0 0;
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size:
+    clamp(48px, 5vw, 76px);
+
+  line-height: 0.92;
+
+  text-transform: uppercase;
+}
+
+
+/* PARAGRAPH */
+
+.about-strength-section p {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 620px;
+
+  margin: 0;
+
+  padding: 28px 30px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 1.85;
+
+  border-radius: 18px;
+
+  background:
+    rgba(0, 10, 20, 0.55);
+
+  border:
+    1px solid rgba(0, 174, 232, 0.16);
+
+  backdrop-filter:
+    blur(8px);
+
+  -webkit-backdrop-filter:
+    blur(8px);
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.about-strength-section:hover .about-strength-video {
+  opacity: 0.68;
+
+  transform: scale(1.025);
+
+  transition:
+    opacity 0.5s ease,
+    transform 4s ease;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .about-strength-section {
+    grid-template-columns:
+      1fr;
+
+    gap: 30px;
+
+    margin:
+      30px 20px 80px;
+
+    padding:
+      45px 28px;
+
+    min-height: 420px;
+  }
+
+
+  .about-strength-section h2 {
+    font-size: 46px;
+  }
+
+
+  .about-strength-section p {
+    max-width: 100%;
+
+    padding: 22px;
+
+    font-size: 14px;
+  }
+
+
+  .about-strength-overlay {
+    background:
+      rgba(2, 10, 18, 0.78);
+  }
+
+}
+
+/* =====================================================
+   ABOUT INTRO VIDEO BACKGROUND
+===================================================== */
+
+.about-intro {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+
+  gap: 90px;
+
+  align-items: end;
+
+  min-height: 70vh;
+
+  padding: 150px 7% 90px;
+
+  overflow: hidden;
+
+  border-bottom:
+    1px solid rgba(0, 174, 232, 0.12);
+}
+
+
+/* VIDEO */
+
+.about-intro-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /* IMPORTANT */
+  object-position: center top;
+
+  z-index: 0;
+
+  opacity: 0.72;
+
+  pointer-events: none;
+
+  -webkit-mask-image:
+    linear-gradient(to bottom,
+      black 0%,
+      black 84%,
+      transparent 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      black 6%,
+      black 94%,
+      transparent 100%);
+
+  -webkit-mask-composite: source-in;
+
+  mask-image:
+    linear-gradient(to bottom,
+      black 0%,
+      black 84%,
+      transparent 100%),
+    linear-gradient(to right,
+      transparent 0%,
+      black 6%,
+      black 94%,
+      transparent 100%);
+
+  mask-composite: intersect;
+}
+
+/* DARK OVERLAY */
+
+.about-intro-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(90deg,
+      rgba(2, 10, 18, 0.78) 0%,
+      rgba(2, 10, 18, 0.58) 50%,
+      rgba(2, 10, 18, 0.38) 100%);
+
+  pointer-events: none;
+}
+
+.about-intro::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 110px;
+
+  z-index: 2;
+
+  background:
+    linear-gradient(to bottom,
+      transparent,
+      var(--bg));
+
+  pointer-events: none;
+}
+
+
+/* KEEP CONTENT ABOVE VIDEO */
+
+.about-intro-left,
+.about-intro-right {
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* LEFT SIDE */
+
+.about-intro-left {
+  position: relative;
+}
+
+
+.about-intro-number {
+  position: absolute;
+
+  top: -75px;
+  left: 0;
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size: 110px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  color:
+    rgba(0, 174, 232, 0.08);
+
+  pointer-events: none;
+}
+
+
+.about-intro h1 {
+  max-width: 760px;
+
+  margin: 18px 0 0;
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size:
+    clamp(54px, 6vw, 88px);
+
+  line-height: .95;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+
+.about-intro h1 span {
+  display: block;
+
+  margin-top: 8px;
+
+  color: var(--accent);
+}
+
+
+/* RIGHT SIDE */
+
+.about-intro-right {
+  padding-left: 35px;
+
+  border-left:
+    1px solid rgba(0, 174, 232, 0.3);
+}
+
+
+.about-intro-right::before {
+  content: "";
+
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  top: 0;
+  left: -4px;
+
+  border-radius: 50%;
+
+  background:
+    var(--accent);
+
+  box-shadow:
+    0 0 14px rgba(0, 174, 232, 0.45);
+}
+
+
+.about-intro-right p {
+  margin: 0 0 20px;
+
+  color:
+    rgba(255, 255, 255, 0.72);
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+.about-intro-lead {
+  color:
+    #ffffff !important;
+
+  font-size:
+    20px !important;
+
+  line-height:
+    1.65 !important;
+
+  font-weight:
+    500;
+}
+
+
+/* BOTTOM LINE */
+
+.about-intro-line {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 35px;
+
+  color:
+    rgba(255, 255, 255, 0.65);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: .16em;
+}
+
+
+.about-intro-line i {
+  width: 65px;
+
+  height: 1px;
+
+  background:
+    linear-gradient(90deg,
+      var(--accent),
+      transparent);
+}
+
+
+/* VIDEO HOVER EFFECT */
+
+.about-intro:hover .about-intro-video {
+  opacity: 0.68;
+
+  transform: scale(1.02);
+
+  transition:
+    opacity .5s ease,
+    transform 5s ease;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .about-intro {
+    grid-template-columns:
+      1fr;
+
+    gap: 55px;
+
+    min-height: auto;
+
+    padding:
+      135px 6% 80px;
+  }
+
+
+  .about-intro-right {
+    max-width: 700px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .about-intro {
+    padding:
+      120px 20px 70px;
+
+    gap: 45px;
+  }
+
+
+  .about-intro-number {
+    top: -55px;
+
+    font-size: 78px;
+  }
+
+
+  .about-intro h1 {
+    font-size: 52px;
+  }
+
+
+  .about-intro-right {
+    padding-left: 22px;
+  }
+
+
+  .about-intro-lead {
+    font-size:
+      17px !important;
+  }
+
+
+  .about-intro-overlay {
+    background:
+      rgba(2, 10, 18, 0.68);
   }
 
 }
