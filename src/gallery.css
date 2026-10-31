@@ -693,28 +693,180 @@
    MOBILE
 ====================================================== */
 
-@media (max-width: 650px) {
+/* ======================================================
+   MOBILE RESPONSIVE - EVENTS GALLERY
+====================================================== */
+
+@media (max-width: 700px) {
+
+  .event-gallery-page {
+    padding: 105px 16px 70px;
+  }
+
+  .event-gallery-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .event-gallery-heading {
+    margin-bottom: 34px;
+  }
+
+  .event-gallery-heading > span,
+  .selected-event-header > div > span {
+    font-size: 9px;
+    letter-spacing: .16em;
+  }
+
+  .event-gallery-heading h1,
+  .selected-event-header h1 {
+    font-size: 46px;
+    line-height: .94;
+  }
+
+  .event-gallery-heading p,
+  .selected-event-header p {
+    font-size: 13px;
+    line-height: 1.65;
+    margin-top: 18px;
+  }
+
+
+  /* EVENT FOLDERS */
+
+  .event-folder-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .event-folder-card {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 18px !important;
+  }
+
+  .event-folder-card::before {
+    left: 18px;
+    width: 105px;
+    height: 9px;
+  }
+
+  .event-folder-top {
+    top: 20px;
+    right: 18px;
+  }
+
+  .event-folder-top span {
+    padding: 7px 10px;
+    font-size: 8px;
+  }
+
+  .event-folder-content {
+    padding: 24px 20px;
+  }
+
+  .event-folder-content h2 {
+    font-size: 36px;
+  }
+
+  .event-folder-content p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .event-folder-count {
+    font-size: 8px;
+  }
+
+  .event-open-text {
+    margin-top: 18px;
+    font-size: 8px;
+  }
+
+
+  /* SELECTED EVENT */
+
+  .selected-event-header {
+    margin-bottom: 30px;
+  }
+
+  .gallery-back-button {
+    margin-bottom: 28px;
+    padding: 10px 14px;
+    font-size: 9px;
+  }
+
+
+  /* COLLAGE */
 
   .event-photo-collage {
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 14px;
   }
 
   .event-photo {
     width: 100%;
+    min-height: 0;
+    border-radius: 16px;
   }
 
   .event-photo.landscape {
-    height: 280px;
+    height: 245px;
   }
 
   .event-photo.portrait {
-    height: 470px;
+    height: 430px;
   }
 
   .event-photo.square {
-    height: 380px;
+    height: 330px;
+  }
+
+  .event-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .event-photo > span {
+    right: 14px;
+    bottom: 12px;
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .event-gallery-page {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .event-gallery-heading h1,
+  .selected-event-header h1 {
+    font-size: 40px;
+  }
+
+  .event-folder-card {
+    min-height: 300px;
+  }
+
+  .event-folder-content h2 {
+    font-size: 32px;
+  }
+
+  .event-photo.landscape {
+    height: 220px;
+  }
+
+  .event-photo.portrait {
+    height: 390px;
+  }
+
+  .event-photo.square {
+    height: 300px;
   }
 
 }
