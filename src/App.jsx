@@ -26,6 +26,8 @@ import useTheme from './hooks/useTheme';
 import AboutPage from "./components/AboutPage";
 import ScrollToHash from "./components/ScrollToHash";
 import ScrollManager from "./components/ScrollManager";
+import Gallery from "./components/Gallery";
+import GalleryPage from "./components/GalleryPage";
 
 
 function Home() {
@@ -37,6 +39,8 @@ function Home() {
       <About />
 
       <Services />
+
+
 
       <ManpowerDashboard />
 
@@ -95,7 +99,14 @@ export default function App() {
           element={<AboutPage />}
         />
 
+        <Route
+        path="/gallery"
+        element={<GalleryPage />}
+      />
+
       </Routes>
+
+      
 
 
       {/* GAME - SHOW ON ALL PAGES */}

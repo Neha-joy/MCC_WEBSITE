@@ -25,7 +25,7 @@ export default function Navbar({
     "About",
     "Services",
     "Projects",
-    "Team",
+    "Gallery",
     "Contact"
   ];
 
@@ -139,6 +139,21 @@ export default function Navbar({
 
           }
 
+          if (link === "Gallery") {
+            return (
+              <Link
+                key={link}
+                to="/gallery"
+                onClick={() => {
+                  setOpen(false);
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Gallery
+              </Link>
+            );
+          }
+
 
           /* ALL HOME SECTIONS */
 
@@ -210,8 +225,8 @@ export default function Navbar({
 
         <button
           className={`theme-toggle ${theme === "dark"
-              ? "is-dark"
-              : "is-light"
+            ? "is-dark"
+            : "is-light"
             }`}
 
           onClick={

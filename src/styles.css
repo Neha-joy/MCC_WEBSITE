@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
   --bg: #090a0c;
@@ -61,7 +61,7 @@ img {
 .coverage h2,
 .contact h2,
 .build-copy h2 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: clamp(44px, 6vw, 78px);
   line-height: .92;
   letter-spacing: -.025em;
@@ -109,14 +109,14 @@ img {
   place-items: center;
   background: var(--yellow);
   color: #121212;
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-weight: 900;
   font-size: 20px;
   clip-path: polygon(12% 0, 100% 0, 88% 100%, 0 100%)
 }
 
 .brand strong {
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 20px;
   letter-spacing: .08em
 }
@@ -200,7 +200,7 @@ img {
 }
 
 .hero h1 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: clamp(64px, 9vw, 126px);
   line-height: .78;
   letter-spacing: -.035em;
@@ -266,7 +266,7 @@ img {
 }
 
 .hero-stats strong {
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 40px;
   color: var(--yellow)
 }
@@ -495,7 +495,7 @@ img {
 
 .image-badge strong {
   display: block;
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 20px
 }
 
@@ -587,12 +587,12 @@ img {
   right: 22px;
   top: 22px;
   color: #555b64;
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 22px
 }
 
 .service-card h3 {
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 25px;
   margin: 0 0 10px;
   text-transform: uppercase
@@ -664,7 +664,7 @@ img {
 }
 
 .project-info h3 {
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 34px;
   margin: 7px 0 5px;
   text-transform: uppercase
@@ -683,7 +683,7 @@ img {
   position: absolute;
   right: 20px;
   top: 18px;
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 28px;
   color: rgba(255, 255, 255, .46)
 }
@@ -738,7 +738,7 @@ img {
 }
 
 .why-card h3 {
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 26px;
   margin: 35px 0 10px;
   text-transform: uppercase
@@ -771,13 +771,13 @@ img {
 
 .team-list span {
   color: var(--yellow);
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 24px
 }
 
 .team-list h3 {
   margin: 0;
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 25px;
   text-transform: uppercase
 }
@@ -811,70 +811,6 @@ img {
   letter-spacing: .16em
 }
 
-.gallery {
-  max-width: 100%;
-  padding-left: max(24px, calc((100vw - var(--max))/2));
-  padding-right: max(24px, calc((100vw - var(--max))/2));
-  background: #0d0f12
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: 230px;
-  gap: 12px
-}
-
-.gallery figure {
-  margin: 0;
-  position: relative;
-  overflow: hidden
-}
-
-.gallery img {
-  height: 100%;
-  object-fit: cover;
-  transition: .5s
-}
-
-.gallery figure:hover img {
-  transform: scale(1.05)
-}
-
-.gallery figcaption {
-  position: absolute;
-  left: 14px;
-  bottom: 12px;
-  font-size: 9px;
-  letter-spacing: .15em;
-  font-weight: 800;
-  text-shadow: 0 1px 10px #000
-}
-
-.g-1 {
-  grid-column: span 6;
-  grid-row: span 2
-}
-
-.g-2 {
-  grid-column: span 3
-}
-
-.g-3 {
-  grid-column: span 3
-}
-
-.g-4 {
-  grid-column: span 3
-}
-
-.g-5 {
-  grid-column: span 3
-}
-
-.g-6 {
-  grid-column: span 6
-}
 
 .coverage {
   max-width: var(--max);
@@ -919,7 +855,7 @@ img {
 }
 
 .city strong {
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   font-size: 28px
 }
 
@@ -1117,10 +1053,10 @@ footer {
   }
 
   .build-section,
-  .about-grid,
-  .team-grid,
-  .coverage,
-  .contact-inner {
+.about-grid,
+.team-grid,
+.coverage,
+.contact-inner {
     grid-template-columns: 1fr;
     gap: 50px
   }
@@ -1244,15 +1180,9 @@ footer {
     grid-template-columns: 1fr
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 280px
-  }
+  
 
-  .gallery figure {
-    grid-column: auto !important;
-    grid-row: auto !important
-  }
+  
 
   .coverage {
     padding: 90px 18px
@@ -1271,7 +1201,7 @@ footer {
   }
 
   .footer-top,
-  .footer-bottom {
+.footer-bottom {
     align-items: flex-start;
     flex-direction: column
   }
@@ -1460,8 +1390,7 @@ body {
   background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 15%, transparent), color-mix(in srgb, var(--panel) 60%, transparent))
 }
 
-.services,
-.gallery {
+.services {
   background: var(--section-alt)
 }
 
@@ -2178,7 +2107,7 @@ footer {
 @keyframes orbitPulse {
 
   0%,
-  100% {
+100% {
     transform: scale(.92);
     opacity: .65
   }
@@ -2192,7 +2121,7 @@ footer {
 @keyframes floatTag {
 
   0%,
-  100% {
+100% {
     transform: translateY(0)
   }
 
@@ -2345,142 +2274,14 @@ footer {
 }
 
 
-
-/* .gallery figure {
-  position: relative;
-  overflow: hidden;
-  border-radius: 18px;
-}
-
-.gallery figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.gallery figure:hover img {
-  transform: scale(1.06);
-}
-
-.gallery figcaption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  padding: 22px 18px 16px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0)
-  );
-
-  color: #fff;
-}
-
-.gallery figcaption strong {
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.gallery figcaption span {
-  font-size: 13px;
-  opacity: 0.8;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-} */
-
-
-/* =========================================
-   STAFF GALLERY - CUSTOM COLLAGE
-========================================= */
-
-/* =========================================================
-   STAFF GALLERY - 9 PERSON COLLAGE
-   ========================================================= */
-
-.gallery {
-  overflow: hidden;
-}
-
-.gallery-grid {
-  display: grid;
-
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-
-  /* Controls vertical sizing */
-  grid-auto-rows: 42px;
-
-  gap: 14px;
-
-  margin-top: 48px;
-
-  width: 100%;
-
-  align-items: stretch;
-}
-
-
 /* =========================================================
    BASE CARD
    ========================================================= */
-
-.gallery figure {
-  position: relative;
-
-  margin: 0;
-
-  width: 100%;
-  height: 100%;
-
-  min-width: 0;
-
-  overflow: hidden;
-
-  border-radius: 18px;
-
-  background: #061426;
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  cursor: pointer;
-
-  isolation: isolate;
-
-  transition:
-    transform 0.4s ease,
-    box-shadow 0.4s ease,
-    border-color 0.4s ease;
-}
 
 
 /* =========================================================
    IMAGES
    ========================================================= */
-
-.gallery figure img {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  display: block;
-
-  object-fit: cover;
-  object-position: top center;
-
-  transition:
-    transform 0.7s cubic-bezier(.22, 1, .36, 1),
-    filter 0.5s ease;
-}
 
 
 /* =========================================================
@@ -2488,36 +2289,10 @@ footer {
    WHEN IMAGE DOESN'T LOAD
    ========================================================= */
 
-.gallery figure {
-  background:
-    linear-gradient(145deg,
-      #061326,
-      #071b31);
-}
-
 
 /* =========================================================
    DARK IMAGE OVERLAY
    ========================================================= */
-
-.gallery figure::after {
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  z-index: 1;
-
-  background:
-    linear-gradient(to top,
-      rgba(1, 9, 22, 0.98) 0%,
-      rgba(2, 12, 28, 0.72) 20%,
-      rgba(2, 12, 28, 0.20) 47%,
-      transparent 68%);
-
-  pointer-events: none;
-}
 
 
 /* =========================================================
@@ -2529,171 +2304,59 @@ footer {
    BIGGEST CARD - TOP LEFT
 */
 
-.gallery-grid .g-1 {
-  grid-column: 1 / span 4;
-  grid-row: 1 / span 9;
-}
-
 
 /* 02 - GENERAL MANAGER
    TOP CENTER
 */
-
-.gallery-grid .g-2 {
-  grid-column: 5 / span 3;
-  grid-row: 2 / span 8;
-}
 
 
 /* 03 - OPERATIONS MANAGER
    TOP RIGHT
 */
 
-.gallery-grid .g-3 {
-  grid-column: 8 / span 4;
-  grid-row: 2 / span 8;
-}
-
 
 /* 04 - TRANSPORT MANAGER
    SECOND ROW LEFT
 */
-
-.gallery-grid .g-4 {
-  grid-column: 1 / span 4;
-  grid-row: 10 / span 7;
-}
 
 
 /* 05 - HR MANAGER
    SECOND ROW CENTER - TALL
 */
 
-.gallery-grid .g-5 {
-  grid-column: 5 / span 3;
-  grid-row: 10 / span 9;
-}
-
 
 /* 06 - BILLING MANAGER
    SECOND ROW RIGHT
 */
-
-.gallery-grid .g-6 {
-  grid-column: 8 / span 4;
-  grid-row: 10 / span 7;
-}
 
 
 /* 07 - IT MANAGER
    BOTTOM LEFT
 */
 
-.gallery-grid .g-7 {
-  grid-column: 1 / span 4;
-  grid-row: 17 / span 9;
-}
-
 
 /* 08 - PRO
    BOTTOM RIGHT
 */
-
-.gallery-grid .g-8 {
-  grid-column: 9 / span 4;
-  grid-row: 17 / span 9;
-}
 
 
 /* 09 - ACCOUNTS MANAGER
    BOTTOM CENTER
 */
 
-.gallery-grid .g-9 {
-  grid-column: 5 / span 4;
-  grid-row: 17 / span 9;
-}
-
 
 /* =========================================================
    STAFF CAPTION
    ========================================================= */
 
-.gallery figcaption {
-  position: absolute;
-
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  z-index: 3;
-
-  padding: 24px 22px 20px;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: flex-start;
-
-  gap: 5px;
-
-  color: #fff;
-
-  pointer-events: none;
-}
-
 
 /* BLUE LINE */
-
-.gallery figcaption::before {
-  content: "";
-
-  display: block;
-
-  width: 34px;
-  height: 3px;
-
-  margin-bottom: 6px;
-
-  border-radius: 999px;
-
-  background: #18b9f5;
-
-  transition: width 0.35s ease;
-}
 
 
 /* STAFF NAME */
 
-.gallery figcaption strong {
-  display: block;
-
-  color: #ffffff;
-
-  font-size: 19px;
-  line-height: 1.2;
-
-  font-weight: 800;
-
-  letter-spacing: 0.4px;
-}
-
 
 /* DESIGNATION */
-
-.gallery figcaption span {
-  display: block;
-
-  color: #16b8f3;
-
-  font-size: 11px;
-
-  font-weight: 700;
-
-  letter-spacing: 1.3px;
-
-  text-transform: uppercase;
-}
 
 
 /* =========================================================
@@ -2702,82 +2365,23 @@ footer {
 
 /* MD */
 
-.gallery-grid .g-1 figcaption strong {
-  font-size: 25px;
-}
-
-.gallery-grid .g-1 figcaption span {
-  font-size: 12px;
-}
-
 
 /* GM */
-
-.gallery-grid .g-2 figcaption strong {
-  font-size: 21px;
-}
 
 
 /* =========================================================
    HOVER
    ========================================================= */
 
-.gallery figure:hover {
-  transform: translateY(-7px);
-
-  border-color: rgba(24, 185, 245, 0.5);
-
-  box-shadow:
-    0 28px 65px rgba(0, 0, 0, 0.32),
-    0 0 35px rgba(24, 185, 245, 0.10);
-
-  z-index: 10;
-}
-
-
-.gallery figure:hover img {
-  transform: scale(1.055);
-}
-
-
-.gallery figure:hover figcaption::before {
-  width: 62px;
-}
-
 
 /* =========================================================
    LIGHT MODE
    ========================================================= */
 
-[data-theme="light"] .gallery figure {
-  background:
-    linear-gradient(145deg,
-      #eef9ff,
-      #ffffff);
-
-  border-color:
-    rgba(0, 139, 210, 0.18);
-
-  box-shadow:
-    0 12px 35px rgba(0, 82, 135, 0.08);
-}
-
-
-[data-theme="light"] .gallery figure:hover {
-  border-color:
-    rgba(0, 169, 230, 0.55);
-
-  box-shadow:
-    0 25px 55px rgba(0, 84, 145, 0.16);
-}
-
 
 /* =========================================================
    TABLET
    ========================================================= */
-
-
-
 
 
 /* =========================================
@@ -2786,127 +2390,69 @@ footer {
 
 @media (min-width: 1001px) {
 
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-auto-rows: 52px;
-    gap: 14px;
-    align-items: stretch;
-  }
+  
 
   /* MD */
-  .gallery-grid .g-1 {
-    grid-column: 1 / span 4 !important;
-    grid-row: 1 / 9 !important;
-  }
+  
 
   /* GM */
-  .gallery-grid .g-2 {
-    grid-column: 5 / span 3 !important;
-    grid-row: 1 / 9 !important;
-  }
+  
 
   /* OPERATIONS */
-  .gallery-grid .g-3 {
-    grid-column: 8 / span 4 !important;
-    grid-row: 1 / 9 !important;
-  }
+  
 
   /* FORCE EXACT SAME HEIGHT */
-  .gallery-grid .g-1,
-  .gallery-grid .g-2,
-  .gallery-grid .g-3 {
-    height: 100% !important;
-    min-height: 0 !important;
-    align-self: stretch !important;
-    margin-top: 0 !important;
-    top: auto !important;
-    transform: none;
-  }
+  
 }
 
 @media (max-width: 1050px) {
 
-  .gallery-grid {
-    grid-template-columns:
-      repeat(8, minmax(0, 1fr));
-
-    grid-auto-rows: 44px;
-
-    gap: 14px;
-  }
+  
 
 
   /* MD */
 
-  .gallery-grid .g-1 {
-    grid-column: 1 / span 5;
-    grid-row: 1 / span 9;
-  }
+  
 
 
   /* GM */
 
-  .gallery-grid .g-2 {
-    grid-column: 6 / span 3;
-    grid-row: 1 / span 8;
-  }
+  
 
 
   /* OPERATIONS */
 
-  .gallery-grid .g-3 {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 7;
-  }
+  
 
 
   /* TRANSPORT */
 
-  .gallery-grid .g-4 {
-    grid-column: 5 / span 4;
-    grid-row: 10 / span 7;
-  }
+  
 
 
   /* HR */
 
-  .gallery-grid .g-5 {
-    grid-column: 1 / span 4;
-    grid-row: 17 / span 8;
-  }
+  
 
 
   /* BILLING */
 
-  .gallery-grid .g-6 {
-    grid-column: 5 / span 4;
-    grid-row: 17 / span 8;
-  }
+  
 
 
   /* IT */
 
-  .gallery-grid .g-7 {
-    grid-column: 1 / span 4;
-    grid-row: 25 / span 8;
-  }
+  
 
 
   /* PRO */
 
-  .gallery-grid .g-8 {
-    grid-column: 5 / span 4;
-    grid-row: 25 / span 8;
-  }
+  
 
 
   /* ACCOUNTS */
 
-  .gallery-grid .g-9 {
-    grid-column: 3 / span 4;
-    grid-row: 33 / span 8;
-  }
+  
 
 }
 
@@ -2917,62 +2463,26 @@ footer {
 
 @media (max-width: 650px) {
 
-  .gallery-grid {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 17px;
-
-    margin-top: 32px;
-  }
+  
 
 
-  .gallery figure,
-  .gallery-grid .g-1,
-  .gallery-grid .g-2,
-  .gallery-grid .g-3,
-  .gallery-grid .g-4,
-  .gallery-grid .g-5,
-  .gallery-grid .g-6,
-  .gallery-grid .g-7,
-  .gallery-grid .g-8,
-  .gallery-grid .g-9 {
-
-    width: 100%;
-
-    height: 390px;
-
-    min-height: 390px;
-  }
+  
 
 
   /* MD larger on mobile */
 
-  .gallery-grid .g-1 {
-    height: 480px;
-    min-height: 480px;
-  }
+  
 
 
   /* GM slightly larger */
 
-  .gallery-grid .g-2 {
-    height: 430px;
-    min-height: 430px;
-  }
+  
 
 
-  .gallery figcaption {
-    padding: 22px 20px 18px;
-  }
+  
 
 
-  .gallery figcaption strong,
-  .gallery-grid .g-1 figcaption strong,
-  .gallery-grid .g-2 figcaption strong {
-    font-size: 20px;
-  }
+  
 
 }
 
@@ -3047,7 +2557,6 @@ footer {
 ====================================================== */
 
 .website-content,
-
 footer {
   position: relative;
   z-index: 5;
@@ -3062,7 +2571,6 @@ footer {
 .services,
 .projects,
 .team,
-.gallery,
 .coverage {
   position: relative;
 
@@ -3637,7 +3145,6 @@ footer {
 [data-theme="light"] .services,
 [data-theme="light"] .projects,
 [data-theme="light"] .team,
-[data-theme="light"] .gallery,
 [data-theme="light"] .coverage {
   background:
     rgba(255, 255, 255, 0.72);
@@ -3657,16 +3164,14 @@ footer {
 ====================================================== */
 
 .about,
-.team,
-.gallery {
+.team {
   background:
     rgba(3, 12, 23, 0.56);
 }
 
 
 [data-theme="light"] .about,
-[data-theme="light"] .team,
-[data-theme="light"] .gallery {
+[data-theme="light"] .team {
   background:
     rgba(255, 255, 255, .64);
 }
@@ -3679,11 +3184,10 @@ footer {
 @media (max-width: 700px) {
 
   .section,
-  .services,
-  .projects,
-  .team,
-  .gallery,
-  .coverage {
+.services,
+.projects,
+.team,
+.coverage {
     background:
       rgba(3, 12, 23, 0.72);
   }
@@ -3755,7 +3259,6 @@ footer {
 .about-image,
 .team-image,
 .project-card,
-.gallery figure,
 .why-image {
   position: relative;
   overflow: hidden;
@@ -3768,7 +3271,6 @@ footer {
 .about-image img,
 .team-image img,
 .project-card img,
-.gallery figure img,
 .why-image img {
   width: 100%;
   height: 100%;
@@ -3794,7 +3296,6 @@ footer {
 .about-image::after,
 .team-image::after,
 .project-card::after,
-.gallery figure::after,
 .why-image::after {
   content: "";
 
@@ -3826,7 +3327,6 @@ footer {
 .about-image::before,
 .team-image::before,
 .project-card::before,
-.gallery figure::before,
 .why-image::before {
   content: "";
 
@@ -3852,7 +3352,6 @@ footer {
 .about-image:hover img,
 .team-image:hover img,
 .project-card:hover img,
-.gallery figure:hover img,
 .why-image:hover img {
   transform: scale(1.045);
 
@@ -3908,20 +3407,6 @@ footer {
 
 
 /* ======================================================
-   STAFF GALLERY
-====================================================== */
-
-.gallery figure::after {
-  background:
-    linear-gradient(to top,
-      rgba(2, 9, 22, .96) 0%,
-      rgba(2, 9, 22, .70) 23%,
-      rgba(2, 9, 22, .18) 50%,
-      transparent 72%);
-}
-
-
-/* ======================================================
    WHY US BACKGROUND PHOTO
 ====================================================== */
 
@@ -3943,7 +3428,6 @@ footer {
 .about-image,
 .team-image,
 .project-card,
-.gallery figure,
 .why-image {
   border:
     1px solid rgba(0, 166, 226, .15);
@@ -3961,7 +3445,6 @@ footer {
 [data-theme="light"] .about-image img,
 [data-theme="light"] .team-image img,
 [data-theme="light"] .project-card img,
-[data-theme="light"] .gallery figure img,
 [data-theme="light"] .why-image img {
   filter:
     saturate(.92) contrast(1.03) brightness(1.02);
@@ -3972,7 +3455,6 @@ footer {
 [data-theme="light"] .about-image::after,
 [data-theme="light"] .team-image::after,
 [data-theme="light"] .project-card::after,
-[data-theme="light"] .gallery figure::after,
 [data-theme="light"] .why-image::after {
   background:
     linear-gradient(to top,
@@ -3995,7 +3477,6 @@ footer {
 [data-theme="light"] .about-image,
 [data-theme="light"] .team-image,
 [data-theme="light"] .project-card,
-[data-theme="light"] .gallery figure,
 [data-theme="light"] .why-image {
   border-color:
     rgba(0, 150, 210, .14);
@@ -4109,15 +3590,6 @@ footer {
   filter:
     saturate(1) contrast(1.07) brightness(.98);
 }
-
-
-
-
-
-
-
-
-
 
 
 /* ======================================================
@@ -4258,7 +3730,7 @@ footer {
 @keyframes contactIconPulse {
 
   0%,
-  100% {
+100% {
     filter:
       drop-shadow(0 0 0 rgba(0, 184, 244, 0));
   }
@@ -4297,7 +3769,7 @@ footer {
 @keyframes contactCardFloat {
 
   0%,
-  100% {
+100% {
     transform: translateY(0);
   }
 
@@ -4358,7 +3830,7 @@ footer {
 @keyframes contactFormSweep {
 
   0%,
-  55% {
+55% {
     left: -25%;
     opacity: 0;
   }
@@ -4475,7 +3947,7 @@ footer {
 @keyframes buttonShine {
 
   0%,
-  55% {
+55% {
     left: -40%;
     opacity: 0;
   }
@@ -4590,20 +4062,15 @@ footer {
 @media (prefers-reduced-motion: reduce) {
 
   .contact::before,
-  .contact-form,
-  .contact-form::before,
-  .contact-form button::before,
-  .contact-details svg,
-  .contact-info svg {
+.contact-form,
+.contact-form::before,
+.contact-form button::before,
+.contact-details svg,
+.contact-info svg {
     animation: none !important;
   }
 
 }
-
-
-
-
-
 
 
 /* =========================================
@@ -4656,14 +4123,6 @@ footer {
 [data-theme="light"] .contact-info {
   color: #06213a !important;
 }
-
-
-
-
-
-
-
-
 
 
 /* =========================================
@@ -4780,12 +4239,6 @@ footer {
 .nav-links>a:not(.nav-cta):hover::before {
   opacity: 1;
 }
-
-
-
-
-
-
 
 
 /* =========================================
@@ -5432,14 +4885,11 @@ button,
 
 
   .clients-marquee::before,
-  .clients-marquee::after {
+.clients-marquee::after {
     width: 50px;
   }
 
 }
-
-
-
 
 
 /* =========================================
@@ -5636,16 +5086,6 @@ button,
   }
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* =========================================
@@ -5947,11 +5387,6 @@ button,
 }
 
 
-
-
-
-
-
 .footer-socials {
   display: flex;
   align-items: center;
@@ -6041,11 +5476,6 @@ button,
 
   color: #ffffff;
 }
-
-
-
-
-
 
 
 /* =====================================================
@@ -6930,9 +6360,6 @@ button,
 }
 
 
-
-
-
 /* LIGHT MODE */
 
 [data-theme="light"] .back-top-message {
@@ -7592,8 +7019,6 @@ button,
   text-shadow:
     0 0 14px rgba(0, 174, 232, 0.45);
 }
-
-
 
 
 /* =====================================================
@@ -9575,14 +9000,10 @@ button,
 @media (prefers-reduced-motion: reduce) {
 
   .journey-scroll-card,
-
-  .journey-scroll-content,
-
-  .journey-scroll-dot,
-
-  .journey-progress-active,
-
-  .journey-summary-card {
+.journey-scroll-content,
+.journey-scroll-dot,
+.journey-progress-active,
+.journey-summary-card {
 
     transition:
       none !important;
@@ -9832,18 +9253,16 @@ button,
 @media (prefers-reduced-motion: reduce) {
 
   .journey-item,
-  .journey-content,
-  .journey-year,
-  .growth-card,
-  .journey-achievements>div,
-  .growth-arrow {
+.journey-content,
+.journey-year,
+.growth-card,
+.journey-achievements>div,
+.growth-arrow {
     transition:
       none !important;
   }
 
 }
-
-
 
 
 /* =====================================================
@@ -10044,10 +9463,10 @@ button,
   }
 
   .about-page-hero,
-  .about-md-section,
-  .mission-vision-section,
-  .journey-section,
-  .about-team-section {
+.about-md-section,
+.mission-vision-section,
+.journey-section,
+.about-team-section {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -10170,8 +9589,6 @@ button,
   }
 
 }
-
-
 
 
 /* =====================================================
@@ -10721,12 +10138,6 @@ button,
   }
 
 }
-
-
-
-
-
-
 
 
 .back-top-wrap {

@@ -55,7 +55,7 @@ export const projects = [
 ];
 
 export const staffGallery = [
-  { image: '/images/gallery-01.jpg', name: 'Munna Sah Hira', designation: 'Managing Director' },
+  { image: '/images/gallery-1.jpg', name: 'Munna Sah Hira', designation: 'Managing Director' },
   { image: '/images/gallery-02.jpg', name: 'Ramees Kabeer', designation: 'General Manager' },
   { image: '/images/gallery-03.jpg', name: 'Eidi Amin', designation: 'Operations Manager' },
   { image: '/images/gallery-04.jpg', name: 'Abdul Basit', designation: 'Transport Manager' },
