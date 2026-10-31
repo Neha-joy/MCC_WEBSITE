@@ -2,6 +2,13 @@ import { FaLinkedinIn, FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/
 import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
+    const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <footer>
 
@@ -68,7 +75,7 @@ export default function Footer() {
         </div>
 
 
-        <a
+        {/* <a
           href="#home"
           className="back-top glossy-top"
           aria-label="Back to top"
@@ -77,7 +84,16 @@ export default function Footer() {
           <span className="back-top-message">
             Go to top
           </span>
-        </a>
+        </a> */}
+
+         <button
+            className="back-top glossy-top"
+            onClick={scrollToTop}
+            aria-label="Back to top"
+            type="button"
+          >
+            <ArrowUp size={19} />
+          </button>
 
       </div>
 

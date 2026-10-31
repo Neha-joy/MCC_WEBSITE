@@ -17,7 +17,7 @@
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: auto;
 }
 
 body {
@@ -10721,3 +10721,88 @@ button,
   }
 
 }
+
+
+
+
+
+
+
+
+.back-top-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+
+.back-top {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.glossy-top {
+  width: 44px;
+  height: 44px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--text);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.10),
+      rgba(0,174,232,.08)
+    );
+
+  border:
+    1px solid rgba(255,255,255,.12);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,.12),
+    0 10px 30px rgba(0,0,0,.18);
+
+  transition:
+    transform .3s ease,
+    border-color .3s ease,
+    background .3s ease;
+}
+
+
+.glossy-top:hover {
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(0,174,232,.45);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0,174,232,.16),
+      rgba(255,255,255,.08)
+    );
+}
+
+
+.back-top-message {
+  color: var(--muted);
+
+  font-size: 9px;
+
+  letter-spacing: .08em;
+
+  opacity: .45;
+}
+
+
+
