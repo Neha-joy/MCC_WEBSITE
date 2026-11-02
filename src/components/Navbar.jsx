@@ -94,7 +94,7 @@ export default function Navbar({
           </strong>
 
           <span>
-            OF COMPANY
+            OF COMPANIES
           </span>
 
         </div>

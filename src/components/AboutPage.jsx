@@ -125,9 +125,7 @@ export default function AboutPage() {
 
             <div className="md-letter-text">
 
-              <p>
-                Dear Clients and Partners,
-              </p>
+             
 
               <p>
                 At MCC Group, we believe that our people are the true strength
