@@ -1,56 +1,12 @@
-
-.journey-section {
-  position: relative;
-
-  padding: 110px 7%;
-
-  overflow: hidden;
-}
-
-
 /* =====================================================
-   JOURNEY HEADING
+   MCC JOURNEY - SCROLLING ROAD
 ===================================================== */
 
-.journey-section .section-heading {
-  max-width: 900px;
-
-  margin-bottom: 70px;
-}
-
-
-.journey-section .section-heading h2 {
-  margin: 12px 0 0;
-
-  font-family:
-    "Barlow Condensed",
-    sans-serif;
-
-  font-size:
-    clamp(48px, 6vw, 82px);
-
-  line-height: 0.92;
-
-  text-transform: uppercase;
-}
-
-
-.journey-section .section-heading h2 span {
-  color: var(--accent);
-}
-
-
-/* =====================================================
-   JOURNEY SECTION
-===================================================== */
-
-.journey-section {
+.roadmap-section {
   position: relative;
-
-  width: 100%;
 
   padding:
-    110px 7% 120px;
+    130px 7% 150px;
 
   overflow: hidden;
 }
@@ -60,1137 +16,898 @@
    HEADING
 ===================================================== */
 
-.journey-section .section-heading {
-  position: relative;
+.roadmap-heading {
+  max-width: 920px;
 
-  z-index: 5;
+  margin:
+    0 auto 100px;
 
-  max-width: 950px;
-
-  margin-bottom: 25px;
+  text-align: center;
 }
 
 
-.journey-section .section-heading h2 {
-  margin:
-    12px 0 20px;
+.roadmap-heading > span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: var(--accent);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .23em;
+}
+
+
+.roadmap-heading h2 {
+  margin: 0;
 
   font-family:
     "Barlow Condensed",
     sans-serif;
 
   font-size:
-    clamp(52px, 6vw, 86px);
+    clamp(
+      52px,
+      6vw,
+      88px
+    );
 
-  line-height: .92;
+  line-height: .90;
+
+  color: var(--text);
 
   text-transform: uppercase;
 }
 
 
-.journey-section .section-heading h2 span {
-  color:
-    var(--accent);
+.roadmap-heading h2 strong {
+  display: inline-block;
+
+  color: var(--accent);
+
+  font-weight: inherit;
 }
 
 
-.journey-intro {
-  max-width: 650px;
+.roadmap-heading p {
+  max-width: 620px;
 
-  color:
-    var(--muted);
+  margin:
+    25px auto 0;
 
-  font-size: 15px;
+  color: var(--muted);
+
+  font-size: 14px;
 
   line-height: 1.8;
 }
 
 
-
 /* =====================================================
-   SCROLL STORY
+   ROAD WRAPPER
 ===================================================== */
 
-.journey-scroll-story {
+.roadmap-wrap {
   position: relative;
+
+  width: min(
+    1180px,
+    100%
+  );
+
+  margin: auto;
+
+  padding:
+    70px 0;
+}
+
+
+/* =====================================================
+   MAIN ROAD
+===================================================== */
+
+.road-path {
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+  bottom: 0;
+
+  width: 92px;
+
+  transform:
+    translateX(-50%);
+
+  transform-origin:
+    top center;
+
+  border-radius:
+    60px;
+
+  background:
+    linear-gradient(
+      90deg,
+
+      #071522 0%,
+
+      #183448 14%,
+
+      #25465a 30%,
+
+      #102b3d 50%,
+
+      #25465a 70%,
+
+      #183448 86%,
+
+      #071522 100%
+    );
+
+  border:
+    1px solid
+    rgba(
+      0,
+      174,
+      232,
+      .10
+    );
+
+  box-shadow:
+    inset
+      0 0 30px
+      rgba(
+        0,
+        0,
+        0,
+        .45
+      ),
+
+    0 20px 50px
+      rgba(
+        0,
+        0,
+        0,
+        .20
+      );
+
+  z-index: 0;
+}
+
+
+/* ROAD SIDE LINES */
+
+.road-path::after {
+  content: "";
+
+  position: absolute;
+
+  inset:
+    5px 8px;
+
+  border-left:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .08
+    );
+
+  border-right:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .08
+    );
+
+  border-radius:
+    50px;
+}
+
+
+/* =====================================================
+   ROAD DASH
+===================================================== */
+
+.road-path::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 22px;
+  bottom: 22px;
+
+  width: 4px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius:
+    99px;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+
+      var(--accent)
+        0px,
+
+      var(--accent)
+        26px,
+
+      transparent
+        26px,
+
+      transparent
+        55px
+    );
+
+  opacity: .72;
+
+  box-shadow:
+    0 0 12px
+    rgba(
+      0,
+      174,
+      232,
+      .22
+    );
+}
+
+
+/* =====================================================
+   JOURNEY STOP
+===================================================== */
+
+.road-stop {
+  position: relative;
+
+  z-index: 2;
 
   display: grid;
 
   grid-template-columns:
-    75px minmax(0, 1fr);
-
-  gap: 45px;
-
-  width: 100%;
-
-  max-width: 1100px;
-
-  margin-top: 10px;
-}
-
-
-
-/* =====================================================
-   PROGRESS BAR
-===================================================== */
-
-.journey-progress {
-  position: sticky;
-
-  top: 180px;
-
-  align-self: start;
-
-  display: flex;
-
-  flex-direction: column;
+    1fr
+    130px
+    1fr;
 
   align-items: center;
 
-  height: 330px;
-
-  z-index: 5;
+  min-height: 300px;
 }
 
 
-.journey-progress-line {
+/* =====================================================
+   MILESTONE NUMBER
+===================================================== */
+
+.road-dot {
+  grid-column: 2;
+
   position: relative;
 
-  width: 2px;
+  z-index: 5;
 
-  height: 235px;
+  width: 68px;
+  height: 68px;
 
-  overflow: hidden;
+  margin: auto;
 
-  border-radius: 999px;
+  display: grid;
 
-  background:
-    rgba(0, 174, 232, .13);
-}
+  place-items: center;
 
+  border-radius:
+    50%;
 
-.journey-progress-active {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-
-  border-radius: inherit;
-
-  background:
-    linear-gradient(to bottom,
-      #11bdf5,
-      rgba(0, 174, 232, .35));
-
-  box-shadow:
-    0 0 18px rgba(0, 174, 232, .55);
-}
-
-
-.journey-progress span {
-  margin-top: 18px;
-
-  color:
-    var(--accent);
+  color: #ffffff;
 
   font-family:
     "Barlow Condensed",
     sans-serif;
 
-  font-size: 29px;
+  font-size: 21px;
 
-  font-weight: 700;
+  font-weight: 800;
+
+  background:
+    linear-gradient(
+      145deg,
+
+      #18c0f5,
+
+      #087bb0
+    );
+
+  border:
+    6px solid
+    #061421;
+
+  box-shadow:
+    0 0 0 2px
+      rgba(
+        0,
+        174,
+        232,
+        .25
+      ),
+
+    0 0 26px
+      rgba(
+        0,
+        174,
+        232,
+        .30
+      );
 }
 
 
-.journey-progress small {
-  margin-top: 1px;
+/* DOT INNER LIGHT */
 
-  color:
-    var(--muted);
+.road-dot::before {
+  content: "";
 
-  font-size: 10px;
+  position: absolute;
 
-  font-weight: 700;
+  inset: 6px;
 
-  letter-spacing: .1em;
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .25
+    );
+
+  pointer-events: none;
 }
-
 
 
 /* =====================================================
-   LIST
+   JOURNEY CARD
 ===================================================== */
 
-.journey-scroll-list {
+.road-card {
   position: relative;
 
-  width: 100%;
-}
-
-
-
-/* =====================================================
-   EACH SCROLL STEP
-===================================================== */
-
-.journey-scroll-step {
-  position: relative;
-
-  display: flex;
-
-  align-items: center;
-
-  width: 100%;
-
-  min-height: 72vh;
-}
-
-
-
-/* =====================================================
-   CARD WRAPPER
-===================================================== */
-
-.journey-scroll-card {
-  position: relative;
-
-  display: grid;
-
-  grid-template-columns:
-    105px 30px minmax(0, 1fr);
-
-  gap: 23px;
-
-  align-items: start;
-
-  width: 100%;
-
-  max-width: 940px;
+  width: min(
+    430px,
+    100%
+  );
 
   padding:
-    35px 20px 35px 0;
+    30px 32px;
 
-  will-change:
-    transform,
-    opacity,
-    filter;
+  border-radius:
+    22px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+
+      rgba(
+        255,
+        255,
+        255,
+        .055
+      ),
+
+      rgba(
+        0,
+        174,
+        232,
+        .025
+      )
+    );
+
+  border:
+    1px solid
+    rgba(
+      0,
+      174,
+      232,
+      .15
+    );
+
+  backdrop-filter:
+    blur(13px);
+
+  -webkit-backdrop-filter:
+    blur(13px);
+
+  box-shadow:
+    0 22px 55px
+      rgba(
+        0,
+        0,
+        0,
+        .18
+      );
+
+  transition:
+    border-color .35s ease,
+    box-shadow .35s ease,
+    background .35s ease;
 }
 
+
+/* BLUE TOP LIGHT */
+
+.road-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 90px;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+
+      var(--accent),
+
+      transparent
+    );
+}
+
+
+/* LEFT CARDS */
+
+.stop-left .road-card {
+  grid-column: 1;
+
+  justify-self: end;
+
+  text-align: right;
+}
+
+
+/* RIGHT CARDS */
+
+.stop-right .road-card {
+  grid-column: 3;
+
+  justify-self: start;
+
+  text-align: left;
+}
+
+
+/* =====================================================
+   CONNECTOR
+===================================================== */
+
+.stop-left .road-card::after,
+.stop-right .road-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  width: 67px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+
+      var(--accent),
+
+      rgba(
+        0,
+        174,
+        232,
+        .06
+      )
+    );
+}
+
+
+.stop-left .road-card::after {
+  right: -67px;
+}
+
+
+.stop-right .road-card::after {
+  left: -67px;
+
+  transform:
+    rotate(180deg);
+}
 
 
 /* =====================================================
    YEAR
 ===================================================== */
 
-.journey-scroll-year {
-  padding-top: 10px;
-
-  color:
-    var(--accent);
-
-  font-size: 12px;
-
-  font-weight: 800;
-
-  line-height: 1;
-
-  text-align: right;
-
-  text-transform: uppercase;
-
-  letter-spacing: .13em;
-
-  transition:
-    transform .45s ease;
-}
-
-
-.journey-scroll-step.active .journey-scroll-year {
-  transform:
-    translateX(-6px);
-}
-
-
-
-/* =====================================================
-   TIMELINE DOT
-===================================================== */
-
-.journey-scroll-dot {
-  position: relative;
-
-  width: 17px;
-
-  height: 17px;
-
-  margin-top: 7px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(0, 174, 232, .15);
-
-  border:
-    2px solid rgba(0, 174, 232, .35);
-
-  transition:
-    transform .5s ease,
-    background .5s ease,
-    border-color .5s ease,
-    box-shadow .5s ease;
-}
-
-
-
-/* LINE DOWN */
-
-.journey-scroll-dot::after {
-  content: "";
-
-  position: absolute;
-
-  top: 25px;
-
-  left: 50%;
-
-  width: 1px;
-
-  height:
-    calc(72vh - 10px);
-
-  transform:
-    translateX(-50%);
-
-  background:
-    linear-gradient(to bottom,
-      rgba(0, 174, 232, .28),
-      rgba(0, 174, 232, .025));
-}
-
-
-.journey-scroll-step:last-child .journey-scroll-dot::after {
-  display: none;
-}
-
-
-
-/* ACTIVE DOT */
-
-.journey-scroll-step.active .journey-scroll-dot {
-  transform:
-    scale(1.28);
-
-  background:
-    var(--accent);
-
-  border-color:
-    var(--accent);
-
-  box-shadow:
-    0 0 0 8px rgba(0, 174, 232, .07),
-
-    0 0 28px rgba(0, 174, 232, .68);
-}
-
-
-
-/* =====================================================
-   CONTENT CARD
-===================================================== */
-
-.journey-scroll-content {
-  position: relative;
-
-  width: 100%;
-
-  max-width: 750px;
-
-  padding:
-    30px 34px;
-
-  overflow: hidden;
-
-  border-radius: 22px;
-
-  border:
-    1px solid rgba(0, 174, 232, .07);
-
-  background:
-    linear-gradient(135deg,
-      rgba(0, 174, 232, .02),
-      rgba(3, 10, 18, .13));
-
-  transition:
-    border-color .5s ease,
-    background .5s ease,
-    box-shadow .5s ease;
-}
-
-
-
-/* ACTIVE CARD */
-
-.journey-scroll-step.active .journey-scroll-content {
-  border-color:
-    rgba(0, 174, 232, .28);
-
-  background:
-    linear-gradient(135deg,
-      rgba(0, 174, 232, .095),
-      rgba(3, 10, 18, .36));
-
-  box-shadow:
-    0 28px 65px rgba(0, 0, 0, .17);
-}
-
-
-
-/* LEFT BLUE LINE */
-
-.journey-scroll-content::before {
-  content: "";
-
-  position: absolute;
-
-  top: 0;
-
-  left: 0;
-
-  width: 3px;
-
-  height: 0;
-
-  border-radius:
-    999px;
-
-  background:
-    var(--accent);
-
-  box-shadow:
-    0 0 15px rgba(0, 174, 232, .5);
-
-  transition:
-    height .7s cubic-bezier(.22, 1, .36, 1);
-}
-
-
-.journey-scroll-step.active .journey-scroll-content::before {
-  height: 100%;
-}
-
-
-
-/* GLOW */
-
-.journey-scroll-content::after {
-  content: "";
-
-  position: absolute;
-
-  top: -140px;
-
-  right: -100px;
-
-  width: 200px;
-
-  height: 200px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(0, 174, 232, .10);
-
-  filter:
-    blur(28px);
-
-  opacity: 0;
-
-  transition:
-    opacity .6s ease;
-
-  pointer-events: none;
-}
-
-
-.journey-scroll-step.active .journey-scroll-content::after {
-  opacity: 1;
-}
-
-
-
-/* STEP LABEL */
-
-.journey-scroll-content>span {
-  position: relative;
-
-  z-index: 2;
-
+.road-card > span {
   display: block;
 
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 
   color:
     var(--accent);
 
-  font-size: 9px;
+  font-size: 11px;
 
   font-weight: 800;
 
-  letter-spacing: .18em;
+  letter-spacing:
+    .18em;
 }
 
 
+/* =====================================================
+   TITLE
+===================================================== */
 
-/* TITLE */
-
-.journey-scroll-content h3 {
-  position: relative;
-
-  z-index: 2;
-
+.road-card h3 {
   margin:
-    0 0 16px;
+    0 0 12px;
+
+  color:
+    var(--text);
 
   font-family:
     "Barlow Condensed",
     sans-serif;
 
-  font-size:
-    clamp(32px, 3vw, 46px);
+  font-size: 31px;
 
   line-height: 1;
-
-  color:
-    var(--text);
 
   text-transform:
     uppercase;
 }
 
 
+/* =====================================================
+   DESCRIPTION
+===================================================== */
 
-/* DESCRIPTION */
-
-.journey-scroll-content p {
-  position: relative;
-
-  z-index: 2;
-
-  max-width: 690px;
-
+.road-card p {
   margin: 0;
 
   color:
     var(--muted);
 
-  font-size: 15px;
+  font-size:
+    13px;
 
-  line-height: 1.9;
-
-  transition:
-    color .4s ease;
+  line-height:
+    1.75;
 }
-
-
-.journey-scroll-step.active .journey-scroll-content p {
-  color:
-    rgba(255, 255, 255, .72);
-}
-
 
 
 /* =====================================================
-   GROWTH SUMMARY
+   HOVER
 ===================================================== */
 
-.journey-growth-summary {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
-
-  gap: 16px;
-
-  margin-top: 40px;
-}
-
-
-
-/* SUMMARY CARD */
-
-.journey-summary-card {
-  position: relative;
-
-  min-height: 195px;
-
-  padding:
-    27px 25px;
-
-  overflow: hidden;
-
-  border-radius: 20px;
-
-  border:
-    1px solid rgba(0, 174, 232, .13);
-
-  background:
-    linear-gradient(145deg,
-      rgba(255, 255, 255, .025),
-      rgba(0, 174, 232, .02));
-
-  transition:
-    transform .35s ease,
-    border-color .35s ease,
-    background .35s ease;
-}
-
-
-.journey-summary-card:hover {
-  transform:
-    translateY(-7px);
-
+.road-card:hover {
   border-color:
-    rgba(0, 174, 232, .4);
+    rgba(
+      0,
+      174,
+      232,
+      .40
+    );
 
   background:
-    linear-gradient(145deg,
-      rgba(0, 174, 232, .08),
-      rgba(3, 10, 18, .20));
+    linear-gradient(
+      145deg,
+
+      rgba(
+        255,
+        255,
+        255,
+        .075
+      ),
+
+      rgba(
+        0,
+        174,
+        232,
+        .055
+      )
+    );
+
+  box-shadow:
+    0 28px 65px
+      rgba(
+        0,
+        0,
+        0,
+        .24
+      ),
+
+    0 0 28px
+      rgba(
+        0,
+        174,
+        232,
+        .07
+      );
 }
-
-
-
-/* ICON */
-
-.journey-summary-card>svg {
-  width: 24px;
-
-  height: 24px;
-
-  margin-bottom: 18px;
-
-  color:
-    var(--accent);
-}
-
-
-
-/* LABEL */
-
-.journey-summary-card>span {
-  display: block;
-
-  margin-bottom: 18px;
-
-  color:
-    var(--muted);
-
-  font-size: 9px;
-
-  font-weight: 700;
-
-  letter-spacing: .13em;
-}
-
-
-
-/* START -> CURRENT */
-
-.summary-growth {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 12px;
-}
-
-
-.summary-growth>div {
-  display: flex;
-
-  flex-direction: column;
-}
-
-
-.summary-growth small {
-  margin-bottom: 4px;
-
-  color:
-    var(--muted);
-
-  font-size: 9px;
-
-  font-weight: 700;
-}
-
-
-.summary-growth strong {
-  font-family:
-    "Barlow Condensed",
-    sans-serif;
-
-  font-size: 36px;
-
-  line-height: 1;
-
-  color:
-    var(--text);
-}
-
-
-.summary-growth>div:last-child strong {
-  color:
-    var(--accent);
-}
-
-
-.summary-growth b {
-  color:
-    var(--accent);
-
-  font-size: 22px;
-
-  font-weight: 400;
-
-  opacity: .65;
-}
-
-
-
-/* OTHER SUMMARY NUMBERS */
-
-.summary-main {
-  display: block;
-
-  font-family:
-    "Barlow Condensed",
-    sans-serif;
-
-  font-size: 45px;
-
-  line-height: 1;
-
-  color:
-    var(--accent);
-}
-
-
-.journey-summary-card>p {
-  margin:
-    7px 0 0;
-
-  color:
-    var(--muted);
-
-  font-size: 11px;
-}
-
 
 
 /* =====================================================
    LIGHT MODE
 ===================================================== */
 
-[data-theme="light"] .journey-scroll-content {
+[data-theme="light"]
+.road-path {
   background:
-    rgba(255, 255, 255, .4);
-}
+    linear-gradient(
+      90deg,
 
+      #d5e7ef,
 
-[data-theme="light"] .journey-scroll-step.active .journey-scroll-content {
-  background:
-    rgba(255, 255, 255, .88);
+      #b5d3df,
 
-  border-color:
-    rgba(0, 120, 180, .20);
+      #d5e7ef
+    );
 
   box-shadow:
-    0 20px 50px rgba(0, 70, 120, .08);
+    inset
+      0 0 22px
+      rgba(
+        0,
+        60,
+        90,
+        .08
+      ),
+
+    0 15px 35px
+      rgba(
+        0,
+        60,
+        100,
+        .08
+      );
 }
 
 
-[data-theme="light"] .journey-scroll-step.active .journey-scroll-content p {
-  color:
-    var(--muted);
+[data-theme="light"]
+.road-dot {
+  border-color:
+    #eef8fc;
 }
 
 
-[data-theme="light"] .journey-summary-card {
+[data-theme="light"]
+.road-card {
   background:
-    rgba(255, 255, 255, .78);
-}
+    rgba(
+      255,
+      255,
+      255,
+      .78
+    );
 
+  box-shadow:
+    0 18px 45px
+      rgba(
+        0,
+        65,
+        100,
+        .08
+      );
+}
 
 
 /* =====================================================
    TABLET
 ===================================================== */
 
-@media (max-width: 1000px) {
+@media (
+  max-width: 900px
+) {
 
-  .journey-scroll-story {
-    grid-template-columns:
-      50px 1fr;
-
-    gap: 25px;
+  .roadmap-section {
+    padding:
+      105px 5% 120px;
   }
 
-
-  .journey-scroll-card {
-    grid-template-columns:
-      80px 25px minmax(0, 1fr);
-
-    gap: 17px;
+  .roadmap-heading {
+    margin-bottom:
+      75px;
   }
 
-
-  .journey-growth-summary {
+  .road-stop {
     grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+      1fr
+      105px
+      1fr;
+
+    min-height:
+      280px;
+  }
+
+  .road-card {
+    padding:
+      25px 23px;
+  }
+
+  .road-card h3 {
+    font-size:
+      27px;
   }
 
 }
-
 
 
 /* =====================================================
    MOBILE
 ===================================================== */
 
-@media (max-width: 650px) {
+@media (
+  max-width: 700px
+) {
 
-  .journey-section {
+  .roadmap-section {
     padding:
-      75px 20px 85px;
+      90px 18px
+      100px;
   }
 
 
-  .journey-section .section-heading h2 {
+  .roadmap-heading {
+    margin-bottom:
+      60px;
+
+    text-align:
+      left;
+  }
+
+
+  .roadmap-heading h2 {
     font-size:
-      47px;
+      48px;
   }
 
 
-  .journey-scroll-story {
-    grid-template-columns:
-      26px 1fr;
-
-    gap: 10px;
+  .roadmap-heading p {
+    margin-left: 0;
   }
 
 
-  .journey-progress {
-    top: 130px;
+  /* ROAD MOVES LEFT */
 
-    height: 250px;
+  .road-path {
+    left: 31px;
+
+    width: 56px;
   }
 
 
-  .journey-progress-line {
-    height: 175px;
-  }
-
-
-  .journey-progress span {
-    font-size: 21px;
-  }
-
-
-  .journey-scroll-step {
-    min-height: 70vh;
-  }
-
-
-  .journey-scroll-card {
+  .road-stop {
     display: block;
 
+    min-height: 0;
+
     padding:
-      25px 0;
+      0 0
+      65px 88px;
   }
 
 
-  .journey-scroll-year {
-    margin-bottom: 13px;
+  /* NUMBER */
+
+  .road-dot {
+    position: absolute;
+
+    left: 0;
+    top: 7px;
+
+    width: 60px;
+    height: 60px;
+
+    font-size:
+      18px;
+  }
+
+
+  /* CARDS */
+
+  .road-card,
+  .stop-left .road-card,
+  .stop-right .road-card {
+    width: 100%;
 
     text-align: left;
+
+    padding:
+      25px 22px;
   }
 
 
-  .journey-scroll-dot {
+  /* REMOVE DESKTOP CONNECTORS */
+
+  .stop-left
+  .road-card::after,
+
+  .stop-right
+  .road-card::after {
     display: none;
   }
 
 
-  .journey-scroll-content {
-    padding:
-      25px 22px;
-
-    border-radius:
-      17px;
-  }
-
-
-  .journey-scroll-content h3 {
+  .road-card h3 {
     font-size:
-      31px;
-  }
-
-
-  .journey-scroll-content p {
-    font-size:
-      14px;
-
-    line-height:
-      1.8;
-  }
-
-
-  .journey-growth-summary {
-    grid-template-columns:
-      1fr;
-  }
-
-
-  .journey-summary-card {
-    min-height:
-      auto;
+      27px;
   }
 
 }
 
 
-
 /* =====================================================
-   REDUCED MOTION
+   VERY SMALL MOBILE
 ===================================================== */
 
-@media (prefers-reduced-motion: reduce) {
+@media (
+  max-width: 420px
+) {
 
-  .journey-scroll-card,
-.journey-scroll-content,
-.journey-scroll-dot,
-.journey-progress-active,
-.journey-summary-card {
+  .roadmap-heading h2 {
+    font-size:
+      42px;
+  }
 
+
+  .road-stop {
+    padding-left:
+      78px;
+  }
+
+
+  .road-path {
+    left: 28px;
+
+    width: 50px;
+  }
+
+
+  .road-dot {
+    width: 55px;
+    height: 55px;
+
+    font-size:
+      16px;
+  }
+
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (
+  prefers-reduced-motion:
+  reduce
+) {
+
+  .road-card,
+  .road-dot,
+  .road-path {
     transition:
       none !important;
   }
 
 }
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 1050px) {
-
-  .journey-growth {
-    grid-template-columns:
-      1fr auto 1fr;
-
-    row-gap: 35px;
-  }
-
-
-  .journey-achievements {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
-
-}
-
-
-/* =====================================================
-   SMALL TABLET
-===================================================== */
-
-@media (max-width: 800px) {
-
-  .journey-section {
-    padding:
-      85px 5%;
-  }
-
-
-  .journey-timeline::before {
-    left: 90px;
-  }
-
-
-  .journey-item {
-    grid-template-columns:
-      70px minmax(0, 1fr);
-
-    gap: 35px;
-  }
-
-
-  .journey-item::before {
-    left: 83px;
-  }
-
-
-  .journey-year {
-    font-size: 10px;
-  }
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 650px) {
-
-  .journey-section {
-    padding:
-      75px 20px;
-  }
-
-
-  .journey-section .section-heading {
-    margin-bottom: 55px;
-  }
-
-
-  .journey-section .section-heading h2 {
-    font-size: 48px;
-  }
-
-
-  /* MOVE TIMELINE TO LEFT */
-
-  .journey-timeline::before {
-    left: 8px;
-  }
-
-
-  .journey-item {
-    grid-template-columns: 1fr;
-
-    gap: 10px;
-
-    padding:
-      0 0 52px 35px;
-  }
-
-
-  .journey-item::before {
-    left: 1px;
-
-    top: 6px;
-  }
-
-
-  .journey-year {
-    padding: 0;
-
-    text-align: left;
-  }
-
-
-  .journey-item:hover .journey-year {
-    transform:
-      none;
-  }
-
-
-  .journey-content {
-    padding-left: 0;
-  }
-
-
-  .journey-content h3 {
-    font-size: 27px;
-  }
-
-
-  .journey-content p {
-    font-size: 14px;
-
-    line-height: 1.8;
-  }
-
-
-  .journey-item:hover .journey-content {
-    transform:
-      translateX(3px);
-  }
-
-
-  /* HIDE CONTENT SIDE LINE */
-
-  .journey-content::before {
-    display: none;
-  }
-
-
-  /* ACHIEVEMENTS */
-
-  .journey-achievements {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-
-    gap: 12px;
-  }
-
-
-  .journey-achievements>div {
-    padding:
-      23px 15px;
-  }
-
-
-  .journey-achievements strong {
-    font-size: 36px;
-  }
-
-
-  /* GROWTH */
-
-  .journey-growth {
-    grid-template-columns:
-      1fr;
-
-    gap: 13px;
-
-    margin-top: 50px;
-  }
-
-
-  .growth-card {
-    min-height: auto;
-
-    padding: 25px 22px;
-  }
-
-
-  .growth-card strong {
-    font-size: 48px;
-  }
-
-
-  .growth-arrow {
-    width: 100%;
-
-    height: 35px;
-
-    transform:
-      rotate(90deg);
-  }
-
-
-  .growth-arrow:hover {
-    transform:
-      rotate(90deg) translateX(3px);
-  }
-
-}
-
-
