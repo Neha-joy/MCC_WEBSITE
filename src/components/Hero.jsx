@@ -24,10 +24,10 @@ export default function Hero() {
           MCC GROUP OF COMPANIES · UAE
         </motion.div>
         <motion.h1 initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, delay: .2 }}>
-          LABOUR SUPPLY COMPANY<br /><span>IN UAE</span>
+          MANPOWER <br/> COMPANY<br /><span>IN UAE</span>
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .45 }}>
-          Munnasah Concrete Carpenter provides skilled construction manpower,
+          MCC Group provides skilled construction manpower,
           civil workforce, MEP manpower and project support across Sharjah,
           Dubai, Ajman and Abu Dhabi for demanding construction projects
           and daily site operations.
