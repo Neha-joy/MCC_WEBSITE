@@ -1,0 +1,721 @@
+/* ======================================================
+   GLOBAL SCROLL CONSTRUCTION BACKGROUND
+====================================================== */
+
+.scroll-construction-bg {
+  position: fixed;
+  inset: 0;
+
+  z-index: 0;
+
+  overflow: hidden;
+  pointer-events: none;
+
+  opacity: 1;
+
+  background:
+    linear-gradient(180deg,
+      #081d30 0%,
+      #061522 58%,
+      #030b13 100%);
+}
+
+
+/* ======================================================
+   WEBSITE CONTENT ABOVE BACKGROUND
+====================================================== */
+
+.website-content,
+footer {
+  position: relative;
+  z-index: 5;
+}
+
+
+/* ======================================================
+   SECTIONS - MORE TRANSPARENT SO ANIMATION IS VISIBLE
+====================================================== */
+
+.section,
+.services,
+.projects,
+.team,
+.coverage {
+  position: relative;
+
+  background:
+    rgba(3, 12, 23, 0.64);
+
+  backdrop-filter:
+    blur(1px);
+
+  -webkit-backdrop-filter:
+    blur(1px);
+}
+
+
+/* Slightly darker sections where text needs more contrast */
+
+.manpower-dashboard,
+.why,
+.contact {
+  position: relative;
+
+  background:
+    rgba(2, 10, 20, 0.72);
+}
+
+
+/* ======================================================
+   SKY
+====================================================== */
+
+.bg-sky {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 72% 25%,
+      rgba(32, 169, 231, 0.34),
+      rgba(16, 90, 135, 0.12) 32%,
+      transparent 55%),
+    linear-gradient(180deg,
+      rgba(25, 83, 120, 0.16),
+      transparent 60%);
+}
+
+
+/* ======================================================
+   DISTANT CITY
+====================================================== */
+
+.bg-city {
+  position: absolute;
+
+  right: 3%;
+  bottom: 76px;
+
+  width: 50%;
+  height: 330px;
+
+  display: flex;
+  align-items: flex-end;
+
+  gap: 10px;
+
+  opacity: 0.22;
+
+  filter:
+    brightness(1.15);
+}
+
+.bg-city i {
+  flex: 1;
+
+  display: block;
+
+  background:
+    linear-gradient(to top,
+      #60889d,
+      #23485e);
+
+  border-top:
+    1px solid rgba(133, 209, 239, 0.12);
+}
+
+.bg-city i:nth-child(1) {
+  height: 30%;
+}
+
+.bg-city i:nth-child(2) {
+  height: 62%;
+}
+
+.bg-city i:nth-child(3) {
+  height: 42%;
+}
+
+.bg-city i:nth-child(4) {
+  height: 88%;
+}
+
+.bg-city i:nth-child(5) {
+  height: 54%;
+}
+
+.bg-city i:nth-child(6) {
+  height: 73%;
+}
+
+
+/* ======================================================
+   BUILDING
+====================================================== */
+
+.bg-building {
+  position: absolute;
+
+  right: 14%;
+  bottom: 70px;
+
+  width: 330px;
+  height: 585px;
+
+  filter:
+    brightness(1.22) contrast(1.08) drop-shadow(0 15px 30px rgba(0, 0, 0, 0.28));
+}
+
+
+/* ======================================================
+   FOUNDATION
+====================================================== */
+
+.bg-foundation {
+  position: absolute;
+
+  left: -45px;
+  right: -45px;
+  bottom: 0;
+
+  height: 32px;
+
+  transform-origin: center;
+
+  background:
+    linear-gradient(180deg,
+      #c0c6c5,
+      #687478);
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+
+/* ======================================================
+   FLOORS
+====================================================== */
+
+.bg-floors {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 32px;
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bg-building-floor {
+  position: relative;
+
+  height: 73px;
+
+  transform-origin: center;
+}
+
+
+/* ======================================================
+   FLOOR SLABS
+====================================================== */
+
+.bg-slab {
+  position: absolute;
+
+  bottom: 0;
+
+  left: -12px;
+  right: -12px;
+
+  height: 11px;
+
+  background:
+    linear-gradient(#c0c7c7,
+      #687377);
+
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ======================================================
+   COLUMNS
+====================================================== */
+
+.bg-columns {
+  position: absolute;
+
+  inset:
+    0 16px 11px;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.bg-columns i {
+  width: 10px;
+
+  background:
+    linear-gradient(90deg,
+      #798386,
+      #c0c6c5,
+      #697478);
+
+  box-shadow:
+    inset 1px 0 rgba(255, 255, 255, .18);
+}
+
+
+/* ======================================================
+   WINDOWS
+====================================================== */
+
+.bg-windows {
+  position: absolute;
+
+  inset:
+    10px 22px 16px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 5px;
+}
+
+.bg-windows i {
+  background:
+    linear-gradient(135deg,
+      #1e6683,
+      #0b3048);
+
+  border:
+    1px solid rgba(96, 204, 246, 0.28);
+
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, .07);
+}
+
+
+/* ======================================================
+   FINAL GLASS FACADE
+====================================================== */
+
+.bg-final-facade {
+  position: absolute;
+
+  inset:
+    32px 7px 37px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  grid-template-rows:
+    repeat(7, 1fr);
+
+  gap: 4px;
+
+  filter:
+    brightness(1.2);
+}
+
+.bg-final-facade i {
+  background:
+    linear-gradient(135deg,
+      rgba(30, 119, 161, 0.98),
+      rgba(7, 45, 68, 0.98));
+
+  border:
+    1px solid rgba(100, 214, 255, 0.26);
+
+  box-shadow:
+    inset 2px 2px 6px rgba(255, 255, 255, .08);
+}
+
+
+/* ======================================================
+   CRANE
+====================================================== */
+
+.bg-crane {
+  position: absolute;
+
+  right: 2%;
+  top: 8%;
+
+  width: 620px;
+  height: 640px;
+
+  filter:
+    brightness(1.24) drop-shadow(0 8px 15px rgba(0, 0, 0, .22));
+}
+
+.bg-crane-mast {
+  position: absolute;
+
+  right: 82px;
+  top: 50px;
+
+  width: 20px;
+  height: 560px;
+
+  background:
+    repeating-linear-gradient(to bottom,
+      #f0b31c 0,
+      #f0b31c 15px,
+      #946e0c 15px,
+      #946e0c 22px);
+
+  box-shadow:
+    0 0 8px rgba(228, 166, 25, 0.12);
+}
+
+.bg-crane-arm {
+  position: absolute;
+
+  right: 82px;
+  top: 50px;
+
+  width: 470px;
+  height: 11px;
+
+  background: #efb31c;
+
+  box-shadow:
+    0 0 7px rgba(228, 166, 25, 0.13);
+}
+
+.bg-crane-cable {
+  position: absolute;
+
+  left: 130px;
+  top: 55px;
+
+  width: 2px;
+
+  background:
+    #9ba7ad;
+}
+
+.bg-crane-load {
+  position: absolute;
+
+  left: 94px;
+  top: 240px;
+
+  width: 76px;
+  height: 27px;
+
+  background:
+    linear-gradient(#b2b9b8,
+      #566168);
+
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, .25);
+}
+
+
+/* ======================================================
+   WORKERS
+====================================================== */
+
+.bg-workers {
+  position: absolute;
+
+  right: 40%;
+  bottom: 65px;
+
+  display: flex;
+
+  gap: 20px;
+
+  filter:
+    brightness(1.28);
+}
+
+.bg-worker {
+  position: relative;
+
+  width: 38px;
+  height: 105px;
+}
+
+.bg-helmet {
+  position: absolute;
+
+  left: 5px;
+
+  width: 28px;
+  height: 12px;
+
+  border-radius:
+    15px 15px 3px 3px;
+
+  background: #ffbf20;
+
+  box-shadow:
+    inset 0 -2px rgba(157, 99, 0, 0.45);
+}
+
+.bg-head {
+  position: absolute;
+
+  left: 10px;
+  top: 11px;
+
+  width: 18px;
+  height: 19px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(90deg,
+      #aa7354,
+      #d69b75);
+}
+
+.bg-vest {
+  position: absolute;
+
+  left: 2px;
+  top: 30px;
+
+  width: 35px;
+  height: 43px;
+
+  background:
+    linear-gradient(90deg,
+      #bed619,
+      #ecf32f,
+      #a1b30e);
+
+  border-left:
+    7px solid #31495b;
+
+  border-right:
+    7px solid #31495b;
+}
+
+.bg-vest::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  top: 16px;
+
+  height: 4px;
+
+  background:
+    rgba(255, 255, 255, .75);
+}
+
+.bg-legs {
+  position: absolute;
+
+  left: 7px;
+  top: 72px;
+
+  width: 25px;
+  height: 34px;
+
+  border-left:
+    7px solid #173653;
+
+  border-right:
+    7px solid #173653;
+}
+
+
+/* ======================================================
+   GROUND
+====================================================== */
+
+.bg-ground {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 76px;
+
+  background:
+    linear-gradient(#555950,
+      #292f31);
+
+  border-top:
+    1px solid rgba(255, 255, 255, .1);
+}
+
+.bg-ground::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  top: 20px;
+
+  height: 2px;
+
+  background:
+    repeating-linear-gradient(90deg,
+      rgba(255, 255, 255, .22) 0,
+      rgba(255, 255, 255, .22) 30px,
+      transparent 30px,
+      transparent 60px);
+}
+
+
+/* ======================================================
+   COMPLETION MESSAGE
+====================================================== */
+
+.bg-complete {
+  position: absolute;
+
+  right: 7%;
+  bottom: 24px;
+
+  color:
+    rgba(255, 255, 255, .8);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, .5);
+}
+
+
+/* ======================================================
+   LIGHT MODE
+====================================================== */
+
+[data-theme="light"] .scroll-construction-bg {
+  background:
+    linear-gradient(#abd9ec,
+      #e7f6fb);
+}
+
+
+[data-theme="light"] .section,
+[data-theme="light"] .services,
+[data-theme="light"] .projects,
+[data-theme="light"] .team,
+[data-theme="light"] .coverage {
+  background:
+    rgba(255, 255, 255, 0.72);
+}
+
+
+[data-theme="light"] .manpower-dashboard,
+[data-theme="light"] .why,
+[data-theme="light"] .contact {
+  background:
+    rgba(245, 251, 255, 0.80);
+}
+
+
+/* ======================================================
+   OPTIONAL - SOME SECTIONS EVEN MORE TRANSPARENT
+====================================================== */
+
+.about,
+.team {
+  background:
+    rgba(3, 12, 23, 0.56);
+}
+
+
+[data-theme="light"] .about,
+[data-theme="light"] .team {
+  background:
+    rgba(255, 255, 255, .64);
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 700px) {
+
+  .section,
+.services,
+.projects,
+.team,
+.coverage {
+    background:
+      rgba(3, 12, 23, 0.72);
+  }
+
+
+  .bg-building {
+    right: -72px;
+
+    transform:
+      scale(.62);
+
+    transform-origin:
+      bottom right;
+  }
+
+
+  .bg-crane {
+    right: -290px;
+
+    transform:
+      scale(.56);
+
+    transform-origin:
+      top right;
+  }
+
+
+  .bg-workers {
+    right: 23%;
+
+    transform:
+      scale(.66);
+
+    transform-origin:
+      bottom right;
+  }
+
+
+  .bg-city {
+    width: 75%;
+
+    opacity: .18;
+  }
+
+}
+
+
+/* ======================================================
+   REDUCED MOTION
+====================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .scroll-construction-bg * {
+    transition: none !important;
+    animation: none !important;
+  }
+
+}
+
+
+

@@ -1,0 +1,270 @@
+/* =====================================================
+   ABOUT PAGE INTRO
+===================================================== */
+
+:root {
+  --navbar-height: 97px;
+}
+
+.about-page {
+  padding-top: 80px;
+}
+
+.about-intro {
+  margin-top: 0 !important;
+}
+
+.about-intro {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+
+  gap: 90px;
+
+  align-items: end;
+
+  min-height: 70vh;
+
+  padding:
+    1000px 7% 90px;
+
+  overflow: hidden;
+
+  border-bottom:
+    1px solid rgba(0, 174, 232, 0.12);
+}
+
+/* LEFT SIDE */
+
+.about-intro-left {
+  position: relative;
+}
+
+
+.about-intro-number {
+  position: absolute;
+
+  top: -75px;
+  left: 0;
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size: 110px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  color:
+    rgba(0, 174, 232, .06);
+
+  pointer-events: none;
+}
+
+
+.about-intro h1 {
+  max-width: 760px;
+
+  margin:
+    18px 0 0;
+
+  font-family:
+    "Barlow Condensed",
+    sans-serif;
+
+  font-size:
+    clamp(54px,
+      6vw,
+      88px);
+
+  line-height: .95;
+
+  text-transform: uppercase;
+}
+
+
+.about-intro h1 span {
+  display: block;
+
+  margin-top: 8px;
+
+  color: var(--accent);
+}
+
+
+/* RIGHT SIDE */
+
+.about-intro-right {
+  position: relative;
+
+  padding-left: 35px;
+
+  border-left:
+    1px solid rgba(0, 174, 232, .22);
+}
+
+
+.about-intro-right::before {
+  content: "";
+
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  top: 0;
+  left: -4px;
+
+  border-radius: 50%;
+
+  background:
+    var(--accent);
+
+  box-shadow:
+    0 0 14px rgba(0, 174, 232, .45);
+}
+
+
+.about-intro-right p {
+  margin:
+    0 0 20px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+.about-intro-lead {
+  color:
+    var(--text) !important;
+
+  font-size:
+    20px !important;
+
+  line-height:
+    1.65 !important;
+
+  font-weight:
+    500;
+}
+
+
+/* BOTTOM LINE */
+
+.about-intro-line {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 35px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: .16em;
+}
+
+
+.about-intro-line i {
+  width: 65px;
+
+  height: 1px;
+
+  background:
+    linear-gradient(90deg,
+      var(--accent),
+      transparent);
+}
+
+
+/* =====================================================
+   LIGHT MODE
+===================================================== */
+
+[data-theme="light"] .about-intro {
+  border-bottom-color:
+    rgba(0, 90, 150, .12);
+}
+
+
+[data-theme="light"] .about-intro-right {
+  border-left-color:
+    rgba(0, 110, 170, .18);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .about-intro {
+    grid-template-columns:
+      1fr;
+
+    gap: 55px;
+
+    min-height: auto;
+
+    padding:
+      135px 6% 80px;
+  }
+
+
+  .about-intro-right {
+    max-width: 700px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .about-intro {
+    padding:
+      120px 20px 70px;
+
+    gap: 45px;
+  }
+
+
+  .about-intro-number {
+    top: -55px;
+
+    font-size: 78px;
+  }
+
+
+  .about-intro h1 {
+    font-size: 52px;
+  }
+
+
+  .about-intro-right {
+    padding-left: 22px;
+  }
+
+
+  .about-intro-lead {
+    font-size:
+      17px !important;
+  }
+
+}
+

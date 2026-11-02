@@ -1,0 +1,309 @@
+/* === MCC BRAND THEMES === */
+:root,
+:root[data-theme="dark"] {
+  --bg: #03070f;
+  --panel: #071426;
+  --panel2: #0b1d33;
+  --accent: #10a9e8;
+  --accent2: #57c9f3;
+  --text: #f7fbff;
+  --muted: #9eb0c4;
+  --line: rgba(89, 170, 220, .18);
+  --nav-bg: rgba(2, 8, 18, .88);
+  --section-alt: #050d18;
+  --card-bg: rgba(6, 19, 36, .78);
+  --field-bg: #0a1a2d;
+  --field-border: #1d3a58;
+  --footer-bg: #02060c;
+  --hero-bottom: #03070f;
+  --contact-bg: #061a2d;
+  --contact-text: #f7fbff;
+  --yellow: var(--accent);
+  --yellow2: var(--accent2);
+}
+
+:root[data-theme="light"] {
+  --bg: #f7fbff;
+  --panel: #ffffff;
+  --panel2: #eef8fd;
+  --accent: #079fdb;
+  --accent2: #32b8ea;
+  --text: #082033;
+  --muted: #5a7184;
+  --line: rgba(5, 116, 170, .16);
+  --nav-bg: rgba(255, 255, 255, .91);
+  --section-alt: #eef8fd;
+  --card-bg: rgba(255, 255, 255, .9);
+  --field-bg: #ffffff;
+  --field-border: #bbd9e8;
+  --footer-bg: #e7f5fb;
+  --hero-bottom: #f7fbff;
+  --contact-bg: #079fdb;
+  --contact-text: #ffffff;
+  --yellow: var(--accent);
+  --yellow2: var(--accent2);
+}
+
+body {
+  transition: background-color .35s ease, color .35s ease
+}
+
+.nav-wrap {
+  background: linear-gradient(to bottom, var(--nav-bg), color-mix(in srgb, var(--nav-bg) 72%, transparent), transparent);
+  border-bottom: 1px solid transparent;
+  transition: .35s ease
+}
+
+:root[data-theme="light"] .nav-wrap {
+  border-bottom-color: rgba(7, 159, 219, .12);
+  box-shadow: 0 8px 30px rgba(4, 88, 128, .06)
+}
+
+.brand-logo {
+  width: 56px;
+  height: 58px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, .16))
+}
+
+.footer-logo {
+  width: 68px;
+  height: 70px
+}
+
+.brand strong {
+  color: var(--text)
+}
+
+.brand span {
+  color: var(--muted)
+}
+
+.nav-links>a {
+  color: var(--text)
+}
+
+.nav-cta,
+.btn.primary {
+  background: var(--accent);
+  color: #fff !important
+}
+
+.nav-cta:hover,
+.btn.primary:hover {
+  background: var(--accent2)
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.theme-toggle {
+  height: 42px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--panel) 82%, transparent);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font: 800 10px/1 Inter, Arial, sans-serif;
+  letter-spacing: .12em;
+  transition: .25s ease;
+  backdrop-filter: blur(9px)
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px)
+}
+
+.theme-icon {
+  display: grid;
+  place-items: center
+}
+
+.menu-btn {
+  color: var(--text)
+}
+
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(2, 8, 18, .96) 0%, rgba(3, 14, 29, .82) 45%, rgba(3, 18, 33, .35) 78%, rgba(3, 18, 33, .16)), linear-gradient(0deg, var(--hero-bottom) 0%, transparent 27%)
+}
+
+:root[data-theme="light"] .hero-overlay {
+  background: linear-gradient(90deg, rgba(245, 251, 255, .95) 0%, rgba(245, 251, 255, .82) 44%, rgba(245, 251, 255, .24) 76%, rgba(245, 251, 255, .08)), linear-gradient(0deg, var(--hero-bottom) 0%, transparent 28%)
+}
+
+:root[data-theme="light"] .hero-bg {
+  filter: saturate(.88) contrast(.94)
+}
+
+:root[data-theme="light"] .hero h1 {
+  color: #082033;
+  text-shadow: 0 3px 24px rgba(255, 255, 255, .45)
+}
+
+:root[data-theme="light"] .hero-content>p {
+  color: #35546a
+}
+
+:root[data-theme="light"] .hero-stats span,
+.scroll-cue {
+  color: #567188
+}
+
+.btn.ghost {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--text) 34%, transparent);
+  background: color-mix(in srgb, var(--panel) 9%, transparent)
+}
+
+.build-visual {
+  background: linear-gradient(180deg, var(--panel2), var(--panel))
+}
+
+.floor i {
+  border-color: var(--line);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 15%, transparent), color-mix(in srgb, var(--panel) 60%, transparent))
+}
+
+.services {
+  background: var(--section-alt)
+}
+
+.service-card {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--panel) 75%, transparent), transparent)
+}
+
+.service-card:before {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), transparent 55%)
+}
+
+.lead,
+.checks>div {
+  color: var(--text)
+}
+
+.service-num {
+  color: color-mix(in srgb, var(--muted) 62%, transparent)
+}
+
+.coverage-map {
+  background: radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 45%), linear-gradient(135deg, var(--panel2), var(--panel))
+}
+
+.contact {
+  background: var(--contact-bg);
+  color: var(--contact-text)
+}
+
+.contact .eyebrow {
+  color: color-mix(in srgb, var(--contact-text) 80%, transparent)
+}
+
+.contact-form {
+  background: var(--panel);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .16)
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-color: var(--field-border);
+  background: var(--field-bg);
+  color: var(--text)
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--muted)
+}
+
+.contact-form small {
+  color: var(--muted)
+}
+
+footer {
+  background: var(--footer-bg)
+}
+
+.footer-bottom {
+  color: var(--muted)
+}
+
+.why-card {
+  background: var(--card-bg);
+  border-color: var(--line)
+}
+
+:root[data-theme="light"] .why-overlay {
+  background: linear-gradient(90deg, rgba(236, 248, 254, .96), rgba(236, 248, 254, .78) 60%, rgba(236, 248, 254, .45)), linear-gradient(0deg, var(--bg), transparent 30%, transparent 70%, var(--bg))
+}
+
+:root[data-theme="light"] .why .section-title h2,
+:root[data-theme="light"] .why-card h3 {
+  color: #082033
+}
+
+:root[data-theme="light"] .why-card p {
+  color: #557082
+}
+
+:root[data-theme="light"] .project-shade {
+  background: linear-gradient(0deg, rgba(1, 26, 43, .9), transparent 62%)
+}
+
+:root[data-theme="light"] .project-info h3,
+:root[data-theme="light"] .project-info p {
+  color: #fff
+}
+
+:root[data-theme="light"] .project-index {
+  color: rgba(255, 255, 255, .72)
+}
+
+@media(max-width:980px) {
+  .nav-links {
+    background: var(--panel)
+  }
+
+  .theme-label {
+    display: none
+  }
+
+  .theme-toggle {
+    width: 42px;
+    padding: 0;
+    justify-content: center
+  }
+}
+
+@media(max-width:640px) {
+  .brand-logo {
+    width: 44px;
+    height: 46px
+  }
+
+  .brand strong {
+    font-size: 15px
+  }
+
+  .brand span {
+    font-size: 7px
+  }
+
+  .theme-toggle {
+    height: 38px;
+    width: 38px
+  }
+
+  .nav-actions {
+    gap: 5px
+  }
+}
+

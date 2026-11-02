@@ -1,0 +1,533 @@
+/* ======================================================
+   CONTACT SECTION AUTO + HOVER ANIMATION
+====================================================== */
+
+.contact {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+
+/* ======================================================
+   AUTO BACKGROUND GLOW
+====================================================== */
+
+.contact::before {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  right: 8%;
+  top: 15%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(circle,
+      rgba(0, 174, 232, 0.16),
+      rgba(0, 174, 232, 0.05) 42%,
+      transparent 70%);
+
+  filter: blur(28px);
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  animation: contactGlowMove 8s ease-in-out infinite alternate;
+}
+
+@keyframes contactGlowMove {
+
+  0% {
+    transform:
+      translate(-30px, 20px) scale(.95);
+
+    opacity: .55;
+  }
+
+  100% {
+    transform:
+      translate(35px, -25px) scale(1.12);
+
+    opacity: .95;
+  }
+
+}
+
+
+/* ======================================================
+   CONTENT ABOVE GLOW
+====================================================== */
+
+.contact>* {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ======================================================
+   LEFT CONTENT
+====================================================== */
+
+.contact-copy {
+  position: relative;
+}
+
+
+/* heading subtle movement */
+
+.contact-copy h2 {
+  transition:
+    transform .45s ease,
+    text-shadow .45s ease;
+}
+
+.contact-copy:hover h2 {
+  transform: translateX(8px);
+
+  text-shadow:
+    0 0 24px rgba(0, 174, 232, .16);
+}
+
+
+/* ======================================================
+   CONTACT DETAILS
+====================================================== */
+
+.contact-details>div,
+.contact-info>div {
+  transition:
+    transform .3s ease,
+    color .3s ease;
+}
+
+.contact-details>div:hover,
+.contact-info>div:hover {
+  transform: translateX(8px);
+}
+
+
+/* icons */
+
+.contact-details svg,
+.contact-info svg {
+  transition:
+    transform .3s ease,
+    filter .3s ease;
+
+  animation:
+    contactIconPulse 3.6s ease-in-out infinite;
+}
+
+.contact-details>div:hover svg,
+.contact-info>div:hover svg {
+  transform:
+    scale(1.18) rotate(-5deg);
+
+  filter:
+    drop-shadow(0 0 8px rgba(0, 184, 244, .65));
+}
+
+@keyframes contactIconPulse {
+
+  0%,
+100% {
+    filter:
+      drop-shadow(0 0 0 rgba(0, 184, 244, 0));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 0 8px rgba(0, 184, 244, .28));
+  }
+
+}
+
+
+/* ======================================================
+   FORM CARD
+====================================================== */
+
+.contact-form {
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    transform .45s cubic-bezier(.22, 1, .36, 1),
+    box-shadow .45s ease,
+    border-color .45s ease;
+}
+
+
+/* AUTO FLOATING EFFECT */
+
+.contact-form {
+  animation:
+    contactCardFloat 5s ease-in-out infinite;
+}
+
+@keyframes contactCardFloat {
+
+  0%,
+100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+
+}
+
+
+/* stronger hover */
+
+.contact-form:hover {
+  transform:
+    translateY(-10px) scale(1.01);
+
+  border-color:
+    rgba(0, 181, 240, .35);
+
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, .28),
+    0 0 34px rgba(0, 174, 232, .08);
+}
+
+
+/* ======================================================
+   FORM BLUE LIGHT SWEEP
+====================================================== */
+
+.contact-form::before {
+  content: "";
+
+  position: absolute;
+
+  top: -30%;
+  left: -25%;
+
+  width: 80px;
+  height: 170%;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, .08),
+      transparent);
+
+  transform:
+    rotate(14deg);
+
+  animation:
+    contactFormSweep 6s ease-in-out infinite;
+}
+
+@keyframes contactFormSweep {
+
+  0%,
+55% {
+    left: -25%;
+    opacity: 0;
+  }
+
+  65% {
+    opacity: .8;
+  }
+
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
+
+}
+
+
+/* keep form controls above sweep */
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ======================================================
+   INPUT ANIMATION
+====================================================== */
+
+.contact-form input,
+.contact-form textarea {
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease,
+    background .25s ease;
+}
+
+
+/* hover */
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color:
+    rgba(0, 179, 238, .42);
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+
+  border-color: #13bdf3;
+
+  background:
+    rgba(10, 38, 61, .95);
+
+  box-shadow:
+    0 0 0 3px rgba(19, 189, 243, .10),
+    0 10px 25px rgba(0, 0, 0, .12);
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* ======================================================
+   SEND BUTTON
+====================================================== */
+
+.contact-form button {
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    filter .3s ease;
+}
+
+
+/* AUTO SHINE */
+
+.contact-form button::before {
+  content: "";
+
+  position: absolute;
+
+  top: -40%;
+  left: -40%;
+
+  width: 45px;
+  height: 180%;
+
+  background:
+    linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, .55),
+      transparent);
+
+  transform: rotate(18deg);
+
+  animation:
+    buttonShine 3.8s ease-in-out infinite;
+}
+
+@keyframes buttonShine {
+
+  0%,
+55% {
+    left: -40%;
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
+
+}
+
+
+/* button hover */
+
+.contact-form button:hover {
+  transform:
+    translateY(-4px) scale(1.025);
+
+  box-shadow:
+    0 14px 30px rgba(0, 174, 232, .28);
+
+  filter:
+    brightness(1.08);
+}
+
+
+/* arrow movement */
+
+.contact-form button svg {
+  transition:
+    transform .3s ease;
+}
+
+.contact-form button:hover svg {
+  transform: translateX(7px);
+}
+
+
+/* ======================================================
+   LABEL / SMALL TEXT
+====================================================== */
+
+.contact-note,
+.contact-form small {
+  transition:
+    opacity .3s ease;
+}
+
+.contact-form:hover .contact-note,
+.contact-form:hover small {
+  opacity: .9;
+}
+
+
+/* ======================================================
+   LIGHT MODE
+====================================================== */
+
+[data-theme="light"] .contact::before {
+  background:
+    radial-gradient(circle,
+      rgba(0, 157, 220, .16),
+      rgba(0, 157, 220, .05) 45%,
+      transparent 72%);
+}
+
+[data-theme="light"] .contact-form:hover {
+  box-shadow:
+    0 24px 60px rgba(0, 74, 115, .16),
+    0 0 30px rgba(0, 160, 220, .08);
+}
+
+[data-theme="light"] .contact-form input:focus,
+[data-theme="light"] .contact-form textarea:focus {
+  background: #ffffff;
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 700px) {
+
+  .contact-form {
+    animation:
+      contactCardFloat 6s ease-in-out infinite;
+  }
+
+  .contact-form:hover {
+    transform: translateY(-5px);
+  }
+
+  .contact::before {
+    width: 280px;
+    height: 280px;
+
+    right: -80px;
+  }
+
+}
+
+
+/* ======================================================
+   ACCESSIBILITY
+====================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .contact::before,
+.contact-form,
+.contact-form::before,
+.contact-form button::before,
+.contact-details svg,
+.contact-info svg {
+    animation: none !important;
+  }
+
+}
+
+
+/* =========================================
+   CONTACT SECTION - LIGHT MODE TEXT COLORS
+========================================= */
+
+[data-theme="light"] .contact-copy h2,
+[data-theme="light"] .contact-copy p,
+[data-theme="light"] .contact-copy .eyebrow,
+[data-theme="light"] .contact-copy .contact-details,
+[data-theme="light"] .contact-copy .contact-details span,
+[data-theme="light"] .contact-copy .contact-details a,
+[data-theme="light"] .contact-info,
+[data-theme="light"] .contact-info span,
+[data-theme="light"] .contact-info a {
+  color: #06213a !important;
+}
+
+
+/* Main heading */
+[data-theme="light"] .contact-copy h2 {
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95),
+    0 0 12px rgba(255, 255, 255, 0.65);
+}
+
+
+/* Eyebrow - LET'S WORK TOGETHER */
+[data-theme="light"] .contact-copy .eyebrow {
+  color: #0b6f9f !important;
+}
+
+
+/* Contact icons */
+[data-theme="light"] .contact-copy svg,
+[data-theme="light"] .contact-info svg {
+  color: #0b6f9f !important;
+  stroke: #0b6f9f !important;
+}
+
+
+/* Paragraph */
+[data-theme="light"] .contact-copy p {
+  color: #23435d !important;
+}
+
+
+/* Phone / email / location */
+[data-theme="light"] .contact-details,
+[data-theme="light"] .contact-info {
+  color: #06213a !important;
+}
+
+

@@ -25,7 +25,7 @@ export default function Navbar({
     "About",
     "Services",
     "Projects",
-    "Gallery",
+    // "Gallery",
     "Contact"
   ];
 

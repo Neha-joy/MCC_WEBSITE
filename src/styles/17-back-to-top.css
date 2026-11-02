@@ -1,0 +1,57 @@
+.back-top-wrap {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* SMALL MESSAGE ON RIGHT SIDE */
+
+.back-top-message {
+  padding: 6px 9px;
+
+  border-radius: 999px;
+
+  color: rgba(255, 255, 255, .58);
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: .05em;
+
+  white-space: nowrap;
+
+  /* background:
+    rgba(255,255,255,.035); */
+
+  /* border:
+    1px solid rgba(255,255,255,.06); */
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  opacity: .35;
+
+  transition:
+    opacity .3s ease,
+    transform .3s ease;
+}
+
+
+/* LIGHT MODE */
+
+[data-theme="light"] .back-top-message {
+  color:
+    rgba(6, 33, 58, .58);
+
+  /* background:
+    rgba(6,33,58,.035); */
+
+  /* border-color:
+    rgba(6,33,58,.07); */
+}
+
+

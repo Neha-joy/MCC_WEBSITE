@@ -99,10 +99,10 @@ export default function App() {
           element={<AboutPage />}
         />
 
-        <Route
+        {/* <Route
         path="/gallery"
         element={<GalleryPage />}
-      />
+      /> */}
 
       </Routes>
 

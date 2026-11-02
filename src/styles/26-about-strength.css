@@ -1,0 +1,246 @@
+
+.about-strength-section {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 70px;
+
+  align-items: center;
+
+  margin: 40px 7% 110px;
+
+  padding: 60px 70px;
+
+  min-height: 320px;
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(0, 174, 232, 0.16);
+
+  background:
+    linear-gradient(135deg,
+      rgba(0, 174, 232, 0.05),
+      rgba(3, 10, 18, 0.45));
+
+  overflow: hidden;
+}
+
+.about-strength-section h2 {
+  margin: 12px 0 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.about-strength-section p {
+  margin: 0;
+  color: white;
+  line-height: 1.85;
+  max-width: 650px;
+}
+
+
+/* =====================================================
+   LIGHT MODE
+===================================================== */
+
+[data-theme="light"] .mission-card,
+[data-theme="light"] .journey-achievements>div,
+[data-theme="light"] .about-team-card {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(0, 90, 150, 0.12);
+}
+
+[data-theme="light"] .about-strength-section {
+  background:
+    linear-gradient(135deg,
+      rgba(0, 125, 190, 0.07),
+      rgba(255, 255, 255, 0.88));
+}
+
+[data-theme="light"] .about-md-photo::after,
+[data-theme="light"] .about-team-image::after {
+  opacity: 0.45;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+  .about-md-section {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-md-photo {
+    min-height: 500px;
+  }
+
+  .about-md-photo img {
+    min-height: 500px;
+  }
+
+  .journey-achievements {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-strength-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .about-page {
+    padding-top: 75px;
+  }
+
+  .about-page-hero,
+.about-md-section,
+.mission-vision-section,
+.journey-section,
+.about-team-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-page-hero {
+    min-height: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .about-page-hero h1 {
+    font-size: 52px;
+  }
+
+  .about-md-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .about-md-photo {
+    min-height: 430px;
+    border-radius: 18px;
+  }
+
+  .about-md-photo img {
+    min-height: 430px;
+  }
+
+  .about-md-content h2 {
+    font-size: 46px;
+  }
+
+  .mission-vision-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    min-height: auto;
+    padding: 30px 22px;
+  }
+
+  .journey-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .journey-timeline::before {
+    left: 8px;
+  }
+
+  .journey-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-left: 32px;
+    padding-bottom: 45px;
+  }
+
+  .journey-item::before {
+    left: 2px;
+  }
+
+  .journey-year {
+    text-align: left;
+  }
+
+  .journey-content {
+    padding-left: 0;
+  }
+
+  .journey-achievements {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-team-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-team-image {
+    height: 420px;
+  }
+
+  .about-strength-section {
+    margin:
+      20px 20px 75px;
+
+    padding: 32px 24px;
+
+    border-radius: 20px;
+  }
+
+  .about-strength-section h2 {
+    font-size: 46px;
+  }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+  .journey-achievements {
+    grid-template-columns: 1fr;
+  }
+
+  .about-team-image {
+    height: 380px;
+  }
+
+}
+
+
+/* =====================================================
+   ABOUT LAST SECTION WITH VIDEO BACKGROUND
+   ===================================================== */

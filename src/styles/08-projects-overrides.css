@@ -1,0 +1,105 @@
+/* =========================================
+   PROJECT CARD IMAGE BLEND - FIXED
+========================================= */
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* IMAGE */
+.project-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+
+  filter:
+    saturate(.92) contrast(1.05) brightness(.92);
+
+  transition:
+    transform .7s ease,
+    filter .5s ease;
+}
+
+
+/* DARK/BLUE BLEND ONLY OVER IMAGE */
+.project-card::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(to top,
+      rgba(2, 10, 23, .88) 0%,
+      rgba(2, 10, 23, .52) 30%,
+      rgba(2, 10, 23, .14) 58%,
+      rgba(2, 10, 23, .02) 82%),
+    linear-gradient(120deg,
+      rgba(0, 166, 226, .08),
+      transparent 60%);
+}
+
+
+/* CONTENT MUST STAY ABOVE OVERLAY */
+.project-card-content,
+.project-card .project-content,
+.project-card figcaption,
+.project-card h3,
+.project-card p,
+.project-card span,
+.project-card .project-tag,
+.project-card .project-location,
+.project-card .project-number {
+  position: relative;
+  z-index: 3;
+}
+
+
+/* WHITE TITLE */
+.project-card h3 {
+  color: #ffffff !important;
+}
+
+
+/* BLUE CATEGORY */
+.project-card .project-tag,
+.project-card .eyebrow {
+  color: #16bdf2 !important;
+}
+
+
+/* LOCATION */
+.project-card .project-location,
+.project-card p {
+  color: rgba(255, 255, 255, .78);
+}
+
+
+/* PROJECT NUMBER */
+.project-card .project-number {
+  color: rgba(255, 255, 255, .72);
+}
+
+
+/* HOVER */
+.project-card:hover img {
+  transform: scale(1.045);
+
+  filter:
+    saturate(1) contrast(1.07) brightness(.98);
+}
+
+

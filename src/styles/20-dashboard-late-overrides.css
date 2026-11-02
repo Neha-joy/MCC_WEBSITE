@@ -1,0 +1,172 @@
+/* MAKE LIVE VISUAL LONGER */
+
+.capability-list {
+  width: 100%;
+
+  margin-top: 28px;
+}
+
+
+.capability-row {
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+
+
+.capability-track {
+  position: relative;
+
+  width: 100%;
+
+  height: 10px;
+
+  margin-top: 10px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255, 255, 255, .08);
+}
+
+
+.capability-track i {
+  display: block;
+
+  height: 100%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(90deg,
+      var(--accent),
+      rgba(0, 174, 232, .55));
+
+  box-shadow:
+    0 0 18px rgba(0, 174, 232, .35);
+}
+
+
+/* NORMAL BAR */
+
+.capability-track {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* BAR FILL */
+
+.capability-track i {
+  display: block;
+
+  width: var(--target-width);
+  height: 100%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(90deg,
+      #00aee8,
+      #49d9ff,
+      #00aee8);
+
+  background-size: 200% 100%;
+
+  box-shadow:
+    0 0 16px rgba(0, 174, 232, 0.35);
+
+  transition: filter .25s ease;
+}
+
+
+/* HOVER WHOLE OPTION */
+
+.capability-row:hover .capability-track i {
+  animation:
+    capabilityReplay 3.2s ease-out,
+    capabilityFlow 3.5s linear infinite 3.2s;
+
+  filter: brightness(1.25);
+}
+
+/* 0 → CURRENT PERCENTAGE */
+
+@keyframes capabilityReplay {
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: var(--target-width);
+  }
+
+}
+
+
+/* MOVING LIGHT INSIDE BAR */
+
+@keyframes capabilityFlow {
+
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+
+}
+
+
+/* OPTIONAL HOVER EFFECT FOR ROW */
+
+.capability-row {
+  padding: 12px 14px;
+
+  border-radius: 12px;
+
+  transition:
+    background .3s ease,
+    transform .3s ease;
+}
+
+
+.capability-row:hover {
+  background: rgba(0, 174, 232, 0.045);
+
+  transform: translateX(4px);
+}
+
+
+/* PERCENTAGE HIGHLIGHT */
+
+.capability-head b {
+  transition:
+    transform .3s ease,
+    color .3s ease,
+    text-shadow .3s ease;
+}
+
+
+.capability-row:hover .capability-head b {
+  transform: scale(1.12);
+
+  color: #00aee8;
+
+  text-shadow:
+    0 0 14px rgba(0, 174, 232, 0.45);
+}
+
+
